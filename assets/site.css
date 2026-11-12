@@ -1,11 +1,13 @@
-/* site.css — tokens from doc/DESIGN.md (Lietuvos bankas design language). */
+/* site.css — tokens from doc/DESIGN.md. Layout follows the original design language; colours are an
+   independent dark-olive palette (2026-11-12, DECISIONS O3) so the public site is not read as an official
+   Lietuvos bankas product. Series colours validated for colour-vision deficiency (dataviz validator). */
 
 :root {
   color-scheme: light;
-  --brand:        #007153;
-  --brand-dark:   #024734;
-  --brand-mid:    #008b66;
-  --brand-tint:   #9fd4c4;
+  --brand:        #5b6e1f;
+  --brand-dark:   #3b4a1e;
+  --brand-mid:    #6f8526;
+  --brand-tint:   #d3dcae;
   --surface:      #ffffff;
   --surface-2:    #f4f4f4;
   --border:       #d7d7d7;
@@ -13,16 +15,17 @@
   --text:         #333333;
   --text-2:       #575757;
   --text-3:       #6f6f6f;   /* DESIGN.md text-3 is #949393; darkened to 4.9:1 for small text */
-  --heading:      #024734;
+  --heading:      #3b4a1e;
   --negative:     #da4453;
-  --series-1:     #007153;
+  --series-1:     #5b6e1f;
   --series-2:     #2f6db5;
   --series-3:     #b8860b;
   --series-4:     #8e4b8a;
   --series-other: #949393;
-  --scatter-old:  #c9d6d1;
-  --header-bg:    #024734;
+  --scatter-old:  #d3d8c4;
+  --header-bg:    #3b4a1e;
   --header-text:  #ffffff;
+  --on-brand:     #ffffff;   /* text on --brand fills */
   --focus:        #2f6db5;
   --radius:       4px;
   --font-body:    "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -32,22 +35,22 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --brand: #279a76; --brand-dark: #9fd4c4; --brand-mid: #2fae88; --brand-tint: #1f5a48;
-    --surface: #1a1d1c; --surface-2: #222725; --border: #3a403e; --grid: #2c3230;
-    --text: #ececec; --text-2: #c2c6c4; --text-3: #9aa19e; --heading: #9fd4c4;
-    --series-1: #279a76; --series-2: #4f95e0; --series-3: #b98a1f; --series-4: #b866b8;
-    --series-other: #7d8582; --scatter-old: #3d4a45;
-    --header-bg: #0f2a22; --header-text: #ececec; --focus: #4f95e0;
+    --brand: #9aaf45; --brand-dark: #cbd89a; --brand-mid: #a9bd55; --brand-tint: #3c4a1c;
+    --surface: #1c1d19; --surface-2: #23251f; --border: #3b3e35; --grid: #2d2f28;
+    --text: #ececec; --text-2: #c4c6bd; --text-3: #9da095; --heading: #cbd89a;
+    --series-1: #5c7524; --series-2: #4f95e0; --series-3: #bb8c2a; --series-4: #b866b8;
+    --series-other: #82857a; --scatter-old: #44493a;
+    --header-bg: #262d16; --header-text: #ececec; --focus: #4f95e0; --on-brand: #1c1d19;
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --brand: #279a76; --brand-dark: #9fd4c4; --brand-mid: #2fae88; --brand-tint: #1f5a48;
-  --surface: #1a1d1c; --surface-2: #222725; --border: #3a403e; --grid: #2c3230;
-  --text: #ececec; --text-2: #c2c6c4; --text-3: #9aa19e; --heading: #9fd4c4;
-  --series-1: #279a76; --series-2: #4f95e0; --series-3: #b98a1f; --series-4: #b866b8;
-  --series-other: #7d8582; --scatter-old: #3d4a45;
-  --header-bg: #0f2a22; --header-text: #ececec; --focus: #4f95e0;
+  --brand: #9aaf45; --brand-dark: #cbd89a; --brand-mid: #a9bd55; --brand-tint: #3c4a1c;
+  --surface: #1c1d19; --surface-2: #23251f; --border: #3b3e35; --grid: #2d2f28;
+  --text: #ececec; --text-2: #c4c6bd; --text-3: #9da095; --heading: #cbd89a;
+  --series-1: #5c7524; --series-2: #4f95e0; --series-3: #bb8c2a; --series-4: #b866b8;
+  --series-other: #82857a; --scatter-old: #44493a;
+  --header-bg: #262d16; --header-text: #ececec; --focus: #4f95e0; --on-brand: #1c1d19;
 }
 
 * { box-sizing: border-box; }
@@ -99,7 +102,7 @@ a:hover { color: var(--brand-dark); }
 }
 .segmented button:first-child { border-left: 0; }
 .segmented button:hover { background: var(--surface-2); color: var(--text); }
-.segmented button[aria-pressed="true"] { background: var(--brand); color: #fff; }
+.segmented button[aria-pressed="true"] { background: var(--brand); color: var(--on-brand); }
 .range-control { display: flex; align-items: center; gap: 8px; padding: 8px 0; font-size: 13px; color: var(--text-2); }
 
 /* ── Layout ────────────────────────────────────────────────────────────── */
