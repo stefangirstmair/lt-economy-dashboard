@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lithuanian Economy Dashboard</title>
+  <meta name="description" content="Growth, labour market and inflation in Lithuania, with the Baltic states and the euro area: charts updated as new data are released." />
+  <meta name="theme-color" content="#024734" />
+  <meta name="author" content="Stefan Girstmair" />
+  <link rel="canonical" href="https://stefangirstmair.github.io/lt-economy-dashboard/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Lithuanian Economy Dashboard" />
+  <meta property="og:description" content="Growth, labour market and inflation in Lithuania, with the Baltic states and the euro area. A personal project by Stefan Girstmair, updated weekly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stefangirstmair.github.io/lt-economy-dashboard/" />
+  <!-- Google Analytics (same property as the distribution plotter) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0HC79KE8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D0HC79KE8B');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+  <script src="vendor/d3-7.9.0.min.js"></script>
+  <script src="vendor/plot-0.6.16.umd.min.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <div>
+        <h1>Lithuanian Economy Dashboard</h1>
+        <p id="updated">Loading…</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button">Dark mode</button>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Sections">
+    <div class="inner">
+      <ul id="nav-links"></ul>
+      <div id="range" class="range-control"></div>
+    </div>
+  </nav>
+
+  <main id="content">
+    <p class="loading">Loading data…</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>Sources: Eurostat and Statistics Lithuania (Oficialiosios statistikos portalas). Growth rates are computed from the published levels and checked against Eurostat's own rates.</p>
+      <p>A personal project by Stefan Girstmair, built in spare time and updated automatically every week. It is not an
+        official publication of Lietuvos bankas or any other institution, and the views and any errors are my own.</p>
+      <p>&copy; Stefan Girstmair &mdash; <a href="https://stefangirstmair.github.io/" target="_blank" rel="noopener">Website</a></p>
+    </div>
+  </footer>
+</body>
+</html>

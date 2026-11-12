@@ -1,0 +1,924 @@
+{
+    "core": {
+        "latest_yoy": {
+            "uncovered": 1.97,
+            "demand": 2.3,
+            "supply": -0.06,
+            "ambiguous": 0.05
+        },
+        "groups": [
+            "Clothing",
+            "Footwear",
+            "Furniture and furnishings",
+            "Household textiles",
+            "Household appliances",
+            "Glassware, tableware, utensils",
+            "Tools for house and garden",
+            "Medicines and health products",
+            "Purchase of vehicles",
+            "Vehicle parts and accessories",
+            "Vehicle maintenance and repair",
+            "Passenger transport services",
+            "ICT equipment",
+            "ICT services",
+            "Other recreational goods",
+            "Garden products and pets",
+            "Cultural goods",
+            "Newspapers, books, stationery",
+            "Package holidays",
+            "Restaurants and cafés",
+            "Accommodation",
+            "Personal care products",
+            "Other personal effects"
+        ],
+        "coverage_share": 0.691,
+        "range_yoy": {
+            "demand": [
+                0.99,
+                2.3
+            ],
+            "supply": [
+                -0.51,
+                0.54
+            ],
+            "ambiguous": [
+                0,
+                1.65
+            ]
+        }
+    },
+    "indicators": [
+        {
+            "key": "food",
+            "label": "Retail sales volume: food, beverages, tobacco (G47 food)",
+            "deflated": false,
+            "groups": [
+                "Food",
+                "Non-alcoholic beverages",
+                "Alcoholic beverages",
+                "Tobacco"
+            ],
+            "start": "1998-01-01",
+            "code": "G47_FOOD",
+            "fallback": null,
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "other_goods",
+            "label": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "deflated": false,
+            "groups": [
+                "Clothing",
+                "Footwear",
+                "Medicines and health products",
+                "Personal care products",
+                "Other personal effects"
+            ],
+            "start": "2018-01-01",
+            "code": "G477",
+            "fallback": "nonfood",
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "fuel",
+            "label": "Retail sales volume: automotive fuel (G473)",
+            "deflated": false,
+            "groups": [
+                "Fuels and lubricants"
+            ],
+            "start": "1998-01-01",
+            "code": "G473",
+            "fallback": null,
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "restaurants",
+            "label": "Services turnover: food and beverage services (I56)",
+            "deflated": true,
+            "groups": [
+                "Restaurants and cafés"
+            ],
+            "start": "2015-01-01",
+            "code": "I56",
+            "fallback": null,
+            "dataset": "sts_setu_m"
+        },
+        {
+            "key": "household_eq",
+            "label": "Retail sales volume: household equipment (G475)",
+            "deflated": false,
+            "groups": [
+                "Furniture and furnishings",
+                "Household textiles",
+                "Household appliances",
+                "Glassware, tableware, utensils",
+                "Tools for house and garden"
+            ],
+            "start": "2018-01-01",
+            "code": "G475",
+            "fallback": "nonfood",
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "energy_output",
+            "label": "Industrial production: electricity, gas, steam and air conditioning supply (NACE D)",
+            "deflated": false,
+            "groups": [
+                "Solid fuels",
+                "District heating and other heat energy"
+            ],
+            "start": "1998-01-01",
+            "code": "D",
+            "fallback": null,
+            "dataset": "sts_inpr_m"
+        },
+        {
+            "key": "cultural_goods",
+            "label": "Retail sales volume: cultural and recreation goods (G476)",
+            "deflated": false,
+            "groups": [
+                "Other recreational goods",
+                "Garden products and pets",
+                "Cultural goods",
+                "Newspapers, books, stationery"
+            ],
+            "start": "2018-01-01",
+            "code": "G476",
+            "fallback": "nonfood",
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "telecom",
+            "label": "Services turnover: telecommunications (J61)",
+            "deflated": true,
+            "groups": [
+                "ICT services"
+            ],
+            "start": "2015-01-01",
+            "code": "J61",
+            "fallback": null,
+            "dataset": "sts_setu_m"
+        },
+        {
+            "key": "cars",
+            "label": "Sales volume: motor vehicles (G451)",
+            "deflated": false,
+            "groups": [
+                "Purchase of vehicles"
+            ],
+            "start": "2010-01-01",
+            "code": "G451",
+            "fallback": null,
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "car_repair",
+            "label": "Sales volume: motor vehicle maintenance and repair (G452)",
+            "deflated": false,
+            "groups": [
+                "Vehicle maintenance and repair"
+            ],
+            "start": "2005-01-01",
+            "code": "G452",
+            "fallback": null,
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "car_parts",
+            "label": "Sales volume: motor vehicle parts (G453)",
+            "deflated": false,
+            "groups": [
+                "Vehicle parts and accessories"
+            ],
+            "start": "2010-01-01",
+            "code": "G453",
+            "fallback": null,
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "ict_goods",
+            "label": "Retail sales volume: ICT equipment (G474)",
+            "deflated": false,
+            "groups": [
+                "ICT equipment"
+            ],
+            "start": "2018-01-01",
+            "code": "G474",
+            "fallback": "nonfood",
+            "dataset": "sts_trtu_m"
+        },
+        {
+            "key": "travel",
+            "label": "Services turnover: travel agencies and tour operators (N79)",
+            "deflated": true,
+            "groups": [
+                "Package holidays"
+            ],
+            "start": "2015-01-01",
+            "code": "N79",
+            "fallback": null,
+            "dataset": "sts_setu_m"
+        },
+        {
+            "key": "land_transport",
+            "label": "Services turnover: land transport (H49, includes freight)",
+            "deflated": true,
+            "groups": [
+                "Passenger transport services"
+            ],
+            "start": "2015-01-01",
+            "code": "H49",
+            "fallback": null,
+            "dataset": "sts_setu_m"
+        },
+        {
+            "key": "electricity",
+            "label": "Electricity available to the internal market (GWh; total economy, incl. imports; not seasonally adjusted)",
+            "deflated": false,
+            "groups": [
+                "Electricity"
+            ],
+            "start": "2008-01-01",
+            "code": "",
+            "fallback": null,
+            "dataset": "nrg_cb_em"
+        },
+        {
+            "key": "accommodation",
+            "label": "Services turnover: accommodation (I55)",
+            "deflated": true,
+            "groups": [
+                "Accommodation"
+            ],
+            "start": "2015-01-01",
+            "code": "I55",
+            "fallback": null,
+            "dataset": "sts_setu_m"
+        }
+    ],
+    "settings": {
+        "min_coverage": 0.4,
+        "lags": 4,
+        "min_window": 60,
+        "core": "TOT_X_NRG_FOOD",
+        "max_window": 120,
+        "ambiguity_sd": 0.1,
+        "seasonal": true
+    },
+    "robustness": [
+        "2 lags",
+        "6 lags",
+        "7-year window",
+        "no ambiguity band",
+        "wide ambiguity band (0.3 s.d.)"
+    ],
+    "range_yoy": {
+        "demand": [
+            0.68,
+            1.69
+        ],
+        "supply": [
+            1.82,
+            2.99
+        ],
+        "ambiguous": [
+            0,
+            1.83
+        ]
+    },
+    "not_covered": [
+        {
+            "label": "Maintenance, repair and security of the dwelling",
+            "weight": 26.5,
+            "coicop": "CP043",
+            "reason": "Construction output is dominated by new building and business work."
+        },
+        {
+            "label": "Outpatient care services",
+            "weight": 25.2,
+            "coicop": "CP062",
+            "reason": "Health services are not in the short-term services statistics."
+        },
+        {
+            "label": "Water supply and other dwelling services",
+            "weight": 16.5,
+            "coicop": "CP044",
+            "reason": "Utility output is not reported monthly for households."
+        },
+        {
+            "label": "Recreational and sporting services",
+            "weight": 16.1,
+            "coicop": "CP094",
+            "reason": "Arts, sports and recreation (NACE R) are not in the monthly services statistics."
+        },
+        {
+            "label": "Goods and services for routine household maintenance",
+            "weight": 15.8,
+            "coicop": "CP056",
+            "reason": "Mixed goods and services with no matching retail or services series."
+        },
+        {
+            "label": "Actual rentals for housing",
+            "weight": 14.4,
+            "coicop": "CP041",
+            "reason": "No monthly volume of rented housing; real-estate turnover is mostly sales and business rents."
+        },
+        {
+            "label": "Education services",
+            "weight": 13.1,
+            "coicop": "CP10",
+            "reason": "Education is not in the short-term services statistics."
+        },
+        {
+            "label": "Insurance and financial services",
+            "weight": 12.8,
+            "coicop": "CP12",
+            "reason": "Financial services are excluded from the short-term services statistics."
+        },
+        {
+            "label": "Hairdressing and personal grooming",
+            "weight": 10.9,
+            "coicop": "CP1313",
+            "reason": "Personal services (NACE S96) are not in the monthly services statistics."
+        },
+        {
+            "label": "Other services",
+            "weight": 9.7,
+            "coicop": "CP139",
+            "reason": "Heterogeneous; no activity indicator."
+        },
+        {
+            "label": "Gas",
+            "weight": 9.1,
+            "coicop": "CP0452",
+            "reason": "Monthly gas consumption for LT is dominated by industry (mainly fertiliser production) and Eurostat does not publish industrial use separately, so no usable household proxy."
+        },
+        {
+            "label": "Cultural services",
+            "weight": 8.9,
+            "coicop": "CP096",
+            "reason": "Arts, sports and recreation (NACE R) are not in the monthly services statistics."
+        },
+        {
+            "label": "Social protection",
+            "weight": 5.5,
+            "coicop": "CP133",
+            "reason": "Non-market services; no activity indicator."
+        },
+        {
+            "label": "Other health services",
+            "weight": 3.6,
+            "coicop": "CP064",
+            "reason": "Health services are not in the short-term services statistics."
+        },
+        {
+            "label": "Inpatient care services",
+            "weight": 3.2,
+            "coicop": "CP063",
+            "reason": "Health services are not in the short-term services statistics."
+        },
+        {
+            "label": "Other services for personal transport equipment",
+            "weight": 2.1,
+            "coicop": "CP0724",
+            "reason": "Too small and heterogeneous to match."
+        },
+        {
+            "label": "Transport services for goods",
+            "weight": 1.6,
+            "coicop": "CP074",
+            "reason": "Too small to match separately."
+        },
+        {
+            "label": "Software",
+            "weight": 0.6,
+            "coicop": "CP082",
+            "reason": "No retail series for software."
+        },
+        {
+            "label": "Recreational durables",
+            "weight": 0.6,
+            "coicop": "CP091",
+            "reason": "Too small to match separately."
+        },
+        {
+            "label": "Liquid fuels for heating",
+            "weight": 0.4,
+            "coicop": "CP0453",
+            "reason": "Too small to match separately."
+        },
+        {
+            "label": "Electric appliances for personal care",
+            "weight": 0.1,
+            "coicop": "CP1311",
+            "reason": "Too small to match separately."
+        }
+    ],
+    "latest": "2026-08-01",
+    "references": [
+        "Shapiro (2022, rev. 2024), Decomposing Supply and Demand Driven Inflation, FRBSF WP 2022-18",
+        "Gonçalves and Koester (2022), The role of demand and supply in underlying inflation, ECB Economic Bulletin 7/2022"
+    ],
+    "coverage_share": 0.803,
+    "first": "2004-04-01",
+    "robustness_specs": [
+        {
+            "name": "2 lags",
+            "lags": 2
+        },
+        {
+            "name": "6 lags",
+            "lags": 6
+        },
+        {
+            "name": "7-year window",
+            "max_window": 84
+        },
+        {
+            "name": "no ambiguity band",
+            "ambiguity_sd": 0
+        },
+        {
+            "name": "wide ambiguity band (0.3 s.d.)",
+            "ambiguity_sd": 0.3
+        }
+    ],
+    "latest_yoy": {
+        "uncovered": 1.27,
+        "demand": 1.56,
+        "supply": 2.59,
+        "ambiguous": 0.18
+    },
+    "coverage_by_quality": {
+        "high": 33.5,
+        "medium": 40.5,
+        "low": 6.3
+    },
+    "categories": [
+        {
+            "label": "Food",
+            "core": false,
+            "indicator": "Retail sales volume: food, beverages, tobacco (G47 food)",
+            "quality": "high",
+            "months_demand": 4,
+            "supply": 0.58,
+            "latest_label": "demand",
+            "coicop": "CP011",
+            "demand": -0.616,
+            "ambiguous": -0.439,
+            "months_supply": 2,
+            "weight": 192.1,
+            "inflation_yoy": -2.65
+        },
+        {
+            "label": "Fuels and lubricants",
+            "core": false,
+            "indicator": "Retail sales volume: automotive fuel (G473)",
+            "quality": "high",
+            "months_demand": 5,
+            "supply": 0.452,
+            "latest_label": "ambiguous",
+            "coicop": "CP0722",
+            "demand": 0.513,
+            "ambiguous": 0.623,
+            "months_supply": 1,
+            "weight": 57.4,
+            "inflation_yoy": 28.84
+        },
+        {
+            "label": "Restaurants and cafés",
+            "core": true,
+            "indicator": "Services turnover: food and beverage services (I56)",
+            "quality": "high",
+            "months_demand": 5,
+            "supply": 0.011,
+            "latest_label": "ambiguous",
+            "coicop": "CP111",
+            "demand": 0.119,
+            "ambiguous": 0.201,
+            "months_supply": 1,
+            "weight": 56.2,
+            "inflation_yoy": 6.12
+        },
+        {
+            "label": "Alcoholic beverages",
+            "core": false,
+            "indicator": "Retail sales volume: food, beverages, tobacco (G47 food)",
+            "quality": "medium",
+            "months_demand": 0,
+            "supply": 0.165,
+            "latest_label": "ambiguous",
+            "coicop": "CP021",
+            "demand": 0,
+            "ambiguous": 0.129,
+            "months_supply": 3,
+            "weight": 45.9,
+            "inflation_yoy": 6.3
+        },
+        {
+            "label": "Medicines and health products",
+            "core": true,
+            "indicator": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "quality": "medium",
+            "months_demand": 5,
+            "supply": -0.036,
+            "latest_label": "ambiguous",
+            "coicop": "CP061",
+            "demand": 0.083,
+            "ambiguous": 0.053,
+            "months_supply": 4,
+            "weight": 42.5,
+            "inflation_yoy": 2.51
+        },
+        {
+            "label": "Clothing",
+            "core": true,
+            "indicator": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "quality": "medium",
+            "months_demand": 3,
+            "supply": -0.389,
+            "latest_label": "ambiguous",
+            "coicop": "CP031",
+            "demand": 0.26,
+            "ambiguous": 0.172,
+            "months_supply": 4,
+            "weight": 32.3,
+            "inflation_yoy": 0.69
+        },
+        {
+            "label": "ICT services",
+            "core": true,
+            "indicator": "Services turnover: telecommunications (J61)",
+            "quality": "medium",
+            "months_demand": 2,
+            "supply": 0.007,
+            "latest_label": "supply",
+            "coicop": "CP083",
+            "demand": 0.008,
+            "ambiguous": 0.037,
+            "months_supply": 4,
+            "weight": 27.9,
+            "inflation_yoy": 1.93
+        },
+        {
+            "label": "Purchase of vehicles",
+            "core": true,
+            "indicator": "Sales volume: motor vehicles (G451)",
+            "quality": "medium",
+            "months_demand": 3,
+            "supply": -0.036,
+            "latest_label": "demand",
+            "coicop": "CP071",
+            "demand": -0.008,
+            "ambiguous": -0.038,
+            "months_supply": 5,
+            "weight": 26,
+            "inflation_yoy": -3.08
+        },
+        {
+            "label": "Tobacco",
+            "core": false,
+            "indicator": "Retail sales volume: food, beverages, tobacco (G47 food)",
+            "quality": "medium",
+            "months_demand": 2,
+            "supply": 0.137,
+            "latest_label": "ambiguous",
+            "coicop": "CP023",
+            "demand": 0.011,
+            "ambiguous": 0.071,
+            "months_supply": 2,
+            "weight": 25.1,
+            "inflation_yoy": 8.86
+        },
+        {
+            "label": "Personal care products",
+            "core": true,
+            "indicator": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "quality": "medium",
+            "months_demand": 0,
+            "supply": -0.075,
+            "latest_label": "supply",
+            "coicop": "CP1312",
+            "demand": 0,
+            "ambiguous": 0.189,
+            "months_supply": 8,
+            "weight": 24.5,
+            "inflation_yoy": 4.98
+        },
+        {
+            "label": "District heating and other heat energy",
+            "core": false,
+            "indicator": "Industrial production: electricity, gas, steam and air conditioning supply (NACE D)",
+            "quality": "low",
+            "months_demand": 2,
+            "supply": 0.542,
+            "latest_label": "ambiguous",
+            "coicop": "CP0455",
+            "demand": -0.012,
+            "ambiguous": 0.281,
+            "months_supply": 4,
+            "weight": 24.1,
+            "inflation_yoy": 39.74
+        },
+        {
+            "label": "Vehicle maintenance and repair",
+            "core": true,
+            "indicator": "Sales volume: motor vehicle maintenance and repair (G452)",
+            "quality": "medium",
+            "months_demand": 1,
+            "supply": 0.146,
+            "latest_label": "supply",
+            "coicop": "CP0723",
+            "demand": 0,
+            "ambiguous": 0.145,
+            "months_supply": 6,
+            "weight": 23.6,
+            "inflation_yoy": 12.68
+        },
+        {
+            "label": "Furniture and furnishings",
+            "core": true,
+            "indicator": "Retail sales volume: household equipment (G475)",
+            "quality": "medium",
+            "months_demand": 6,
+            "supply": 0.033,
+            "latest_label": "ambiguous",
+            "coicop": "CP051",
+            "demand": -0.008,
+            "ambiguous": 0.016,
+            "months_supply": 2,
+            "weight": 19.9,
+            "inflation_yoy": 2.09
+        },
+        {
+            "label": "Vehicle parts and accessories",
+            "core": true,
+            "indicator": "Sales volume: motor vehicle parts (G453)",
+            "quality": "medium",
+            "months_demand": 1,
+            "supply": -0.008,
+            "latest_label": "supply",
+            "coicop": "CP0721",
+            "demand": -0.023,
+            "ambiguous": 0.025,
+            "months_supply": 6,
+            "weight": 18.5,
+            "inflation_yoy": -0.36
+        },
+        {
+            "label": "ICT equipment",
+            "core": true,
+            "indicator": "Retail sales volume: ICT equipment (G474)",
+            "quality": "medium",
+            "months_demand": 2,
+            "supply": -0.007,
+            "latest_label": "supply",
+            "coicop": "CP081",
+            "demand": 0,
+            "ambiguous": -0.036,
+            "months_supply": 3,
+            "weight": 17,
+            "inflation_yoy": -2.56
+        },
+        {
+            "label": "Non-alcoholic beverages",
+            "core": false,
+            "indicator": "Retail sales volume: food, beverages, tobacco (G47 food)",
+            "quality": "high",
+            "months_demand": 2,
+            "supply": -0.06,
+            "latest_label": "demand",
+            "coicop": "CP012",
+            "demand": -0.003,
+            "ambiguous": 0.125,
+            "months_supply": 3,
+            "weight": 16.8,
+            "inflation_yoy": 3.57
+        },
+        {
+            "label": "Garden products and pets",
+            "core": true,
+            "indicator": "Retail sales volume: cultural and recreation goods (G476)",
+            "quality": "low",
+            "months_demand": 1,
+            "supply": 0.089,
+            "latest_label": "ambiguous",
+            "coicop": "CP093",
+            "demand": -0.018,
+            "ambiguous": 0.027,
+            "months_supply": 8,
+            "weight": 16.4,
+            "inflation_yoy": 6.04
+        },
+        {
+            "label": "Other personal effects",
+            "core": true,
+            "indicator": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "quality": "medium",
+            "months_demand": 1,
+            "supply": 0.051,
+            "latest_label": "ambiguous",
+            "coicop": "CP132",
+            "demand": 0.011,
+            "ambiguous": 0.009,
+            "months_supply": 6,
+            "weight": 16.3,
+            "inflation_yoy": 4.56
+        },
+        {
+            "label": "Household appliances",
+            "core": true,
+            "indicator": "Retail sales volume: household equipment (G475)",
+            "quality": "medium",
+            "months_demand": 4,
+            "supply": -0.001,
+            "latest_label": "ambiguous",
+            "coicop": "CP053",
+            "demand": -0.018,
+            "ambiguous": 0.02,
+            "months_supply": 3,
+            "weight": 15.4,
+            "inflation_yoy": 0
+        },
+        {
+            "label": "Package holidays",
+            "core": true,
+            "indicator": "Services turnover: travel agencies and tour operators (N79)",
+            "quality": "medium",
+            "months_demand": 4,
+            "supply": 0.03,
+            "latest_label": "ambiguous",
+            "coicop": "CP098",
+            "demand": 0.068,
+            "ambiguous": 0.097,
+            "months_supply": 2,
+            "weight": 14.9,
+            "inflation_yoy": 12.33
+        },
+        {
+            "label": "Passenger transport services",
+            "core": true,
+            "indicator": "Services turnover: land transport (H49, includes freight)",
+            "quality": "low",
+            "months_demand": 0,
+            "supply": -0.077,
+            "latest_label": "ambiguous",
+            "coicop": "CP073",
+            "demand": 0,
+            "ambiguous": 0.125,
+            "months_supply": 5,
+            "weight": 14.7,
+            "inflation_yoy": 3.21
+        },
+        {
+            "label": "Electricity",
+            "core": false,
+            "indicator": "Electricity available to the internal market (GWh; total economy, incl. imports; not seasonally adjusted)",
+            "quality": "medium",
+            "months_demand": 5,
+            "supply": 0.094,
+            "latest_label": "ambiguous",
+            "coicop": "CP0451",
+            "demand": 0.014,
+            "ambiguous": 0.066,
+            "months_supply": 5,
+            "weight": 14,
+            "inflation_yoy": 12.22
+        },
+        {
+            "label": "Footwear",
+            "core": true,
+            "indicator": "Retail sales volume: other goods in specialised stores (G477: clothing, footwear, pharmacies, cosmetics, ...)",
+            "quality": "medium",
+            "months_demand": 5,
+            "supply": -0.072,
+            "latest_label": "supply",
+            "coicop": "CP032",
+            "demand": 0.152,
+            "ambiguous": -0.073,
+            "months_supply": 2,
+            "weight": 13.1,
+            "inflation_yoy": 1
+        },
+        {
+            "label": "Accommodation",
+            "core": true,
+            "indicator": "Services turnover: accommodation (I55)",
+            "quality": "high",
+            "months_demand": 4,
+            "supply": 0.038,
+            "latest_label": "supply",
+            "coicop": "CP112",
+            "demand": -0.02,
+            "ambiguous": 0.038,
+            "months_supply": 4,
+            "weight": 12.6,
+            "inflation_yoy": 4.3
+        },
+        {
+            "label": "Tools for house and garden",
+            "core": true,
+            "indicator": "Retail sales volume: household equipment (G475)",
+            "quality": "medium",
+            "months_demand": 6,
+            "supply": 0,
+            "latest_label": "ambiguous",
+            "coicop": "CP055",
+            "demand": -0.006,
+            "ambiguous": 0.002,
+            "months_supply": 0,
+            "weight": 8.7,
+            "inflation_yoy": -0.45
+        },
+        {
+            "label": "Solid fuels",
+            "core": false,
+            "indicator": "Industrial production: electricity, gas, steam and air conditioning supply (NACE D)",
+            "quality": "low",
+            "months_demand": 4,
+            "supply": 0.084,
+            "latest_label": "demand",
+            "coicop": "CP0454",
+            "demand": 0.176,
+            "ambiguous": -0.025,
+            "months_supply": 3,
+            "weight": 8.1,
+            "inflation_yoy": 28.51
+        },
+        {
+            "label": "Other recreational goods",
+            "core": true,
+            "indicator": "Retail sales volume: cultural and recreation goods (G476)",
+            "quality": "medium",
+            "months_demand": 5,
+            "supply": 0.064,
+            "latest_label": "ambiguous",
+            "coicop": "CP092",
+            "demand": -0.029,
+            "ambiguous": -0.057,
+            "months_supply": 2,
+            "weight": 6.7,
+            "inflation_yoy": -2.29
+        },
+        {
+            "label": "Newspapers, books, stationery",
+            "core": true,
+            "indicator": "Retail sales volume: cultural and recreation goods (G476)",
+            "quality": "medium",
+            "months_demand": 1,
+            "supply": 0.012,
+            "latest_label": "ambiguous",
+            "coicop": "CP097",
+            "demand": 0.001,
+            "ambiguous": 0.022,
+            "months_supply": 3,
+            "weight": 5.9,
+            "inflation_yoy": 5.41
+        },
+        {
+            "label": "Glassware, tableware, utensils",
+            "core": true,
+            "indicator": "Retail sales volume: household equipment (G475)",
+            "quality": "medium",
+            "months_demand": 5,
+            "supply": 0.003,
+            "latest_label": "ambiguous",
+            "coicop": "CP054",
+            "demand": 0.007,
+            "ambiguous": -0.005,
+            "months_supply": 2,
+            "weight": 3.4,
+            "inflation_yoy": 1.39
+        },
+        {
+            "label": "Household textiles",
+            "core": true,
+            "indicator": "Retail sales volume: household equipment (G475)",
+            "quality": "medium",
+            "months_demand": 7,
+            "supply": 0.003,
+            "latest_label": "ambiguous",
+            "coicop": "CP052",
+            "demand": 0.003,
+            "ambiguous": -0.003,
+            "months_supply": 1,
+            "weight": 2.7,
+            "inflation_yoy": 1.15
+        },
+        {
+            "label": "Cultural goods",
+            "core": true,
+            "indicator": "Retail sales volume: cultural and recreation goods (G476)",
+            "quality": "medium",
+            "months_demand": 4,
+            "supply": 0.002,
+            "latest_label": "demand",
+            "coicop": "CP095",
+            "demand": -0.001,
+            "ambiguous": 0,
+            "months_supply": 5,
+            "weight": 0.4,
+            "inflation_yoy": 2.57
+        }
+    ]
+}

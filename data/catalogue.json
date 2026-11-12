@@ -1,0 +1,3639 @@
+{
+    "today": "2026-11-12",
+    "geo_names": {
+        "EA21": "Euro area",
+        "LT": "Lithuania",
+        "EU27_2020": "EU27",
+        "EA20": "Euro area (20)",
+        "LV": "Latvia",
+        "EE": "Estonia"
+    },
+    "errors": [
+    ],
+    "sections": [
+        "growth",
+        "labour",
+        "inflation"
+    ],
+    "warnings": [
+        {
+            "message": "latest observation is Apr 2026",
+            "id": "esi.EE"
+        },
+        {
+            "message": "latest observation is 2025 Q4",
+            "id": "jvr.LT"
+        },
+        {
+            "message": "latest observation is 2025 Q4",
+            "id": "jvr.LV"
+        },
+        {
+            "message": "latest observation is 2025 Q4",
+            "id": "jvr.EE"
+        },
+        {
+            "message": "latest observation is 2025 Q4",
+            "id": "vacancies.LT"
+        },
+        {
+            "message": "latest observation is 2025 Q4",
+            "id": "vu_ratio.LT"
+        }
+    ],
+    "series": [
+        {
+            "geo": "LT",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=B1GQ",
+            "geo_name": "Lithuania",
+            "id": "gdp_real.LT",
+            "notes": "Seasonally and calendar adjusted. The latest quarter is often the flash estimate (GDP only, no components).",
+            "latest": {
+                "level": {
+                    "change": -150.8,
+                    "date": "2026-07-01",
+                    "value": 15277.1
+                },
+                "pop": {
+                    "change": -2.418063,
+                    "date": "2026-07-01",
+                    "value": -0.9774499
+                },
+                "yoy": {
+                    "change": -1.677343,
+                    "date": "2026-07-01",
+                    "value": 2.261835
+                },
+                "pop_ann": {
+                    "change": -9.741024,
+                    "date": "2026-07-01",
+                    "value": -3.852848
+                },
+                "index:2019": {
+                    "change": -1.1817,
+                    "date": "2026-07-01",
+                    "value": 119.7129
+                }
+            },
+            "concept": "gdp_real",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q annualised",
+                    "id": "pop_ann",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Real GDP",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=EA21&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=B1GQ",
+            "geo_name": "Euro area",
+            "id": "gdp_real.EA21",
+            "notes": "Seasonally and calendar adjusted. The latest quarter is often the flash estimate (GDP only, no components).",
+            "latest": {
+                "level": {
+                    "change": 13951,
+                    "date": "2026-07-01",
+                    "value": 3373440
+                },
+                "pop": {
+                    "change": -0.2297303,
+                    "date": "2026-07-01",
+                    "value": 0.4152656
+                },
+                "yoy": {
+                    "change": 0.098573,
+                    "date": "2026-07-01",
+                    "value": 1.300602
+                },
+                "pop_ann": {
+                    "change": -0.933614,
+                    "date": "2026-07-01",
+                    "value": 1.671438
+                },
+                "index:2019": {
+                    "change": 0.4482,
+                    "date": "2026-07-01",
+                    "value": 108.3703
+                }
+            },
+            "concept": "gdp_real",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q annualised",
+                    "id": "pop_ann",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Real GDP",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LV&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=B1GQ",
+            "geo_name": "Latvia",
+            "id": "gdp_real.LV",
+            "notes": "Seasonally and calendar adjusted. The latest quarter is often the flash estimate (GDP only, no components).",
+            "latest": {
+                "level": {
+                    "change": 74.8,
+                    "date": "2026-04-01",
+                    "value": 8309.5
+                },
+                "pop": {
+                    "change": 0.1534264,
+                    "date": "2026-04-01",
+                    "value": 0.9083512
+                },
+                "yoy": {
+                    "change": 0.57261,
+                    "date": "2026-04-01",
+                    "value": 3.449778
+                },
+                "pop_ann": {
+                    "change": 0.629146,
+                    "date": "2026-04-01",
+                    "value": 3.683212
+                },
+                "index:2019": {
+                    "change": 0.9897,
+                    "date": "2026-04-01",
+                    "value": 109.9431
+                }
+            },
+            "concept": "gdp_real",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q annualised",
+                    "id": "pop_ann",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Real GDP",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=EE&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=B1GQ",
+            "geo_name": "Estonia",
+            "id": "gdp_real.EE",
+            "notes": "Seasonally and calendar adjusted. The latest quarter is often the flash estimate (GDP only, no components).",
+            "latest": {
+                "level": {
+                    "change": 43.9,
+                    "date": "2026-07-01",
+                    "value": 7664.4
+                },
+                "pop": {
+                    "change": 0.2297608,
+                    "date": "2026-07-01",
+                    "value": 0.5760777
+                },
+                "yoy": {
+                    "change": 0.43069,
+                    "date": "2026-07-01",
+                    "value": 2.204265
+                },
+                "pop_ann": {
+                    "change": 0.931819,
+                    "date": "2026-07-01",
+                    "value": 2.324299
+                },
+                "index:2019": {
+                    "change": 0.6136,
+                    "date": "2026-07-01",
+                    "value": 107.1274
+                }
+            },
+            "concept": "gdp_real",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q annualised",
+                    "id": "pop_ann",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Real GDP",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CP_MEUR&lang=en&na_item=B1GQ",
+            "geo_name": "Lithuania",
+            "id": "gdp_nominal.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -0.284835,
+                    "date": "2026-07-01",
+                    "value": 9.268456
+                },
+                "level": {
+                    "change": 338.9,
+                    "date": "2026-07-01",
+                    "value": 23431.2
+                }
+            },
+            "concept": "gdp_nominal",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, current prices"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, current prices",
+            "title": "Nominal GDP",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=P31_S14_S15",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_hh.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.72,
+                    "date": "2026-04-01",
+                    "value": 0.99
+                }
+            },
+            "concept": "gdp_contrib_hh",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of GDP growth, q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "pp of GDP growth, q/q",
+            "title": "Household consumption",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=P3_S13",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_gov.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.07,
+                    "date": "2026-04-01",
+                    "value": 0.02
+                }
+            },
+            "concept": "gdp_contrib_gov",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of GDP growth, q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "pp of GDP growth, q/q",
+            "title": "Government consumption",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=P51G",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_inv.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 2.97,
+                    "date": "2026-04-01",
+                    "value": 1.88
+                }
+            },
+            "concept": "gdp_contrib_inv",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of GDP growth, q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "pp of GDP growth, q/q",
+            "title": "Fixed investment",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=P52_P53",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_stocks.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -1.08,
+                    "date": "2026-04-01",
+                    "value": 0.02
+                }
+            },
+            "concept": "gdp_contrib_stocks",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of GDP growth, q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "pp of GDP growth, q/q",
+            "title": "Inventories",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=P6X7",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_nx.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.81,
+                    "date": "2026-04-01",
+                    "value": -1.36
+                }
+            },
+            "concept": "gdp_contrib_nx",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of GDP growth, q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "pp of GDP growth, q/q",
+            "title": "Net exports",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-07-01",
+            "first_date": "1995-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CON_PPCH_PRE&lang=en&na_item=B1GQ",
+            "geo_name": "Lithuania",
+            "id": "gdp_contrib_total.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -2.42,
+                    "date": "2026-07-01",
+                    "value": -0.98
+                }
+            },
+            "concept": "gdp_contrib_total",
+            "stale": false,
+            "group": "gdp_contrib",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% q/q"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "% q/q",
+            "title": "GDP growth",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=P31_S14_S15",
+            "geo_name": "Lithuania",
+            "id": "consumption_real.LT",
+            "notes": "",
+            "latest": {
+                "pop": {
+                    "change": 1.336203,
+                    "date": "2026-04-01",
+                    "value": 1.838776
+                },
+                "yoy": {
+                    "change": 1.66926,
+                    "date": "2026-04-01",
+                    "value": 4.952315
+                },
+                "level": {
+                    "change": 152.6,
+                    "date": "2026-04-01",
+                    "value": 8451.6
+                }
+            },
+            "concept": "consumption_real",
+            "stale": false,
+            "group": "gdp_components",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Household consumption, real",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=P51G",
+            "geo_name": "Lithuania",
+            "id": "investment_real.LT",
+            "notes": "",
+            "latest": {
+                "pop": {
+                    "change": 13.78267,
+                    "date": "2026-04-01",
+                    "value": 8.909707
+                },
+                "yoy": {
+                    "change": 13.16463,
+                    "date": "2026-04-01",
+                    "value": 9.740912
+                },
+                "level": {
+                    "change": 312.9,
+                    "date": "2026-04-01",
+                    "value": 3824.8
+                }
+            },
+            "concept": "investment_real",
+            "stale": false,
+            "group": "gdp_components",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Gross fixed capital formation, real",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=P6",
+            "geo_name": "Lithuania",
+            "id": "exports_real.LT",
+            "notes": "",
+            "latest": {
+                "pop": {
+                    "change": 0.238515,
+                    "date": "2026-04-01",
+                    "value": 3.728044
+                },
+                "yoy": {
+                    "change": 3.677527,
+                    "date": "2026-04-01",
+                    "value": 9.13387
+                },
+                "level": {
+                    "change": 473.1,
+                    "date": "2026-04-01",
+                    "value": 13163.4
+                }
+            },
+            "concept": "exports_real",
+            "stale": false,
+            "group": "gdp_components",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Exports of goods and services, real",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=CLV20_MEUR&lang=en&na_item=P7",
+            "geo_name": "Lithuania",
+            "id": "imports_real.LT",
+            "notes": "",
+            "latest": {
+                "pop": {
+                    "change": 1.345849,
+                    "date": "2026-04-01",
+                    "value": 5.7725
+                },
+                "yoy": {
+                    "change": 8.921426,
+                    "date": "2026-04-01",
+                    "value": 13.70698
+                },
+                "level": {
+                    "change": 672.3,
+                    "date": "2026-04-01",
+                    "value": 12318.9
+                }
+            },
+            "concept": "imports_real",
+            "stale": false,
+            "group": "gdp_components",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR million, chain-linked volumes (2020)"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy",
+            "unit": "EUR million, chain-linked volumes (2020)",
+            "title": "Imports of goods and services, real",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1998-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?geo=LT&s_adj=SCA&indic_bt=PRD&unit=I21&lang=en&nace_r2=B-D",
+            "geo_name": "Lithuania",
+            "id": "industrial_production.LT",
+            "notes": "Mining, manufacturing and energy (NACE B-D). Monthly data are volatile; the 3-month average of y/y growth is the default view.",
+            "latest": {
+                "yoy_ma:3": {
+                    "change": 0.288746,
+                    "date": "2026-09-01",
+                    "value": 5.060181
+                },
+                "yoy": {
+                    "change": 3.771838,
+                    "date": "2026-09-01",
+                    "value": 6.952381
+                },
+                "level": {
+                    "change": 2,
+                    "date": "2026-09-01",
+                    "value": 112.3
+                },
+                "index:2019": {
+                    "change": 2.406,
+                    "date": "2026-09-01",
+                    "value": 135.0977
+                }
+            },
+            "concept": "industrial_production",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y, 3-month average",
+                    "id": "yoy_ma:3",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2021 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy_ma:3",
+            "unit": "index, 2021 = 100",
+            "title": "Industrial production",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-11",
+            "source_ref": "sts_inpr_m"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-08-01",
+            "first_date": "1991-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?geo=EA21&s_adj=SCA&indic_bt=PRD&unit=I21&lang=en&nace_r2=B-D",
+            "geo_name": "Euro area",
+            "id": "industrial_production.EA21",
+            "notes": "Mining, manufacturing and energy (NACE B-D). Monthly data are volatile; the 3-month average of y/y growth is the default view.",
+            "latest": {
+                "yoy_ma:3": {
+                    "change": -0.2703157,
+                    "date": "2026-08-01",
+                    "value": -0.6421551
+                },
+                "yoy": {
+                    "change": -0.7081908,
+                    "date": "2026-08-01",
+                    "value": -1.215805
+                },
+                "level": {
+                    "change": -0.5,
+                    "date": "2026-08-01",
+                    "value": 97.5
+                },
+                "index:2019": {
+                    "change": -0.50289,
+                    "date": "2026-08-01",
+                    "value": 98.06387
+                }
+            },
+            "concept": "industrial_production",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y, 3-month average",
+                    "id": "yoy_ma:3",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2021 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy_ma:3",
+            "unit": "index, 2021 = 100",
+            "title": "Industrial production",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-11",
+            "source_ref": "sts_inpr_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1998-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_trtu_m?geo=LT&s_adj=SCA&indic_bt=VOL_SLS&unit=I21&lang=en&nace_r2=G47",
+            "geo_name": "Lithuania",
+            "id": "retail_trade.LT",
+            "notes": "",
+            "latest": {
+                "yoy_ma:3": {
+                    "change": 0.045322,
+                    "date": "2026-09-01",
+                    "value": 5.207606
+                },
+                "yoy": {
+                    "change": 1.79209,
+                    "date": "2026-09-01",
+                    "value": 5.860806
+                },
+                "level": {
+                    "change": 0.5,
+                    "date": "2026-09-01",
+                    "value": 115.6
+                },
+                "index:2019": {
+                    "change": 0.5791,
+                    "date": "2026-09-01",
+                    "value": 133.8867
+                }
+            },
+            "concept": "retail_trade",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y, 3-month average",
+                    "id": "yoy_ma:3",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2021 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy_ma:3",
+            "unit": "index, 2021 = 100",
+            "title": "Retail trade volume",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-11",
+            "source_ref": "sts_trtu_m"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-09-01",
+            "first_date": "2000-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_trtu_m?geo=EA21&s_adj=SCA&indic_bt=VOL_SLS&unit=I21&lang=en&nace_r2=G47",
+            "geo_name": "Euro area",
+            "id": "retail_trade.EA21",
+            "notes": "",
+            "latest": {
+                "yoy_ma:3": {
+                    "change": -0.3543606,
+                    "date": "2026-09-01",
+                    "value": 0.7412704
+                },
+                "yoy": {
+                    "change": -0.8709667,
+                    "date": "2026-09-01",
+                    "value": 0.2895753
+                },
+                "level": {
+                    "change": -0.7,
+                    "date": "2026-09-01",
+                    "value": 103.9
+                },
+                "index:2019": {
+                    "change": -0.7291,
+                    "date": "2026-09-01",
+                    "value": 108.2292
+                }
+            },
+            "concept": "retail_trade",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, y/y, 3-month average",
+                    "id": "yoy_ma:3",
+                    "unit": "%"
+                },
+                {
+                    "label": "Index, 2019 = 100",
+                    "id": "index:2019",
+                    "unit": "index"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2021 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "yoy_ma:3",
+            "unit": "index, 2021 = 100",
+            "title": "Retail trade volume",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-11",
+            "source_ref": "sts_trtu_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1993-05-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=LT&indic=BS-ESI-I&s_adj=SA&lang=en",
+            "geo_name": "Lithuania",
+            "id": "esi.LT",
+            "notes": "European Commission business and consumer surveys.",
+            "latest": {
+                "ma:3": {
+                    "change": -0.1666,
+                    "date": "2026-10-01",
+                    "value": 103.3667
+                },
+                "level": {
+                    "change": -1.8,
+                    "date": "2026-10-01",
+                    "value": 102.6
+                }
+            },
+            "concept": "esi",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, long-term average = 100"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "index, long-term average = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "index, long-term average = 100",
+            "title": "Economic sentiment indicator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-10-01",
+            "first_date": "1980-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=EA21&indic=BS-ESI-I&s_adj=SA&lang=en",
+            "geo_name": "Euro area",
+            "id": "esi.EA21",
+            "notes": "European Commission business and consumer surveys.",
+            "latest": {
+                "ma:3": {
+                    "change": -0.03334,
+                    "date": "2026-10-01",
+                    "value": 97.53333
+                },
+                "level": {
+                    "change": -0.6,
+                    "date": "2026-10-01",
+                    "value": 96.9
+                }
+            },
+            "concept": "esi",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, long-term average = 100"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "index, long-term average = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "index, long-term average = 100",
+            "title": "Economic sentiment indicator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2026-10-01",
+            "first_date": "1993-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=LV&indic=BS-ESI-I&s_adj=SA&lang=en",
+            "geo_name": "Latvia",
+            "id": "esi.LV",
+            "notes": "European Commission business and consumer surveys.",
+            "latest": {
+                "ma:3": {
+                    "change": -0.1333,
+                    "date": "2026-10-01",
+                    "value": 100.0667
+                },
+                "level": {
+                    "change": -0.1,
+                    "date": "2026-10-01",
+                    "value": 99.9
+                }
+            },
+            "concept": "esi",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, long-term average = 100"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "index, long-term average = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "index, long-term average = 100",
+            "title": "Economic sentiment indicator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2026-04-01",
+            "first_date": "1992-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=EE&indic=BS-ESI-I&s_adj=SA&lang=en",
+            "geo_name": "Estonia",
+            "id": "esi.EE",
+            "notes": "European Commission business and consumer surveys.",
+            "latest": {
+                "ma:3": {
+                    "change": -1.26666,
+                    "date": "2026-04-01",
+                    "value": 91.36667
+                },
+                "level": {
+                    "change": -1.3,
+                    "date": "2026-04-01",
+                    "value": 89.7
+                }
+            },
+            "concept": "esi",
+            "stale": true,
+            "group": "",
+            "freq": "M",
+            "last_period": "Apr 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, long-term average = 100"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "index, long-term average = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "index, long-term average = 100",
+            "title": "Economic sentiment indicator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "2001-05-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=LT&indic=BS-CSMCI-BAL&s_adj=SA&lang=en",
+            "geo_name": "Lithuania",
+            "id": "consumer_confidence.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -3.4,
+                    "date": "2026-10-01",
+                    "value": -3.2
+                }
+            },
+            "concept": "consumer_confidence",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "balance, %"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "balance, %",
+            "title": "Consumer confidence",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-10-01",
+            "first_date": "1985-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?geo=EA21&indic=BS-CSMCI-BAL&s_adj=SA&lang=en",
+            "geo_name": "Euro area",
+            "id": "consumer_confidence.EA21",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -1.1,
+                    "date": "2026-10-01",
+                    "value": -17.9
+                }
+            },
+            "concept": "consumer_confidence",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "balance, %"
+                }
+            ],
+            "source": "eurostat",
+            "section": "growth",
+            "default_view": "level",
+            "unit": "balance, %",
+            "title": "Consumer confidence",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-10-29",
+            "source_ref": "ei_bssi_m_r2"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=TOTAL&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp.LT",
+            "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
+            "latest": {
+                "pop": {
+                    "change": -0.7788274,
+                    "date": "2026-10-01",
+                    "value": 0.1034418
+                },
+                "yoy": {
+                    "change": 0.003901,
+                    "date": "2026-10-01",
+                    "value": 6.089296
+                },
+                "level": {
+                    "change": 0.11,
+                    "date": "2026-10-01",
+                    "value": 106.45
+                }
+            },
+            "concept": "hicp",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, m/m",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "HICP inflation",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-10-01",
+            "first_date": "1999-12-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=EA21&coicop18=TOTAL&unit=I25&lang=en",
+            "geo_name": "Euro area",
+            "id": "hicp.EA21",
+            "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
+            "latest": {
+                "pop": {
+                    "change": -0.1666294,
+                    "date": "2026-10-01",
+                    "value": 0.4409509
+                },
+                "yoy": {
+                    "change": 0.229982,
+                    "date": "2026-10-01",
+                    "value": 4.010324
+                },
+                "level": {
+                    "change": 0.46,
+                    "date": "2026-10-01",
+                    "value": 104.78
+                }
+            },
+            "concept": "hicp",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, m/m",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "HICP inflation",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LV&coicop18=TOTAL&unit=I25&lang=en",
+            "geo_name": "Latvia",
+            "id": "hicp.LV",
+            "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
+            "latest": {
+                "pop": {
+                    "change": 0.1058569,
+                    "date": "2026-10-01",
+                    "value": 0.2701399
+                },
+                "yoy": {
+                    "change": 0.022278,
+                    "date": "2026-10-01",
+                    "value": 3.033608
+                },
+                "level": {
+                    "change": 0.28,
+                    "date": "2026-10-01",
+                    "value": 103.93
+                }
+            },
+            "concept": "hicp",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, m/m",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "HICP inflation",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=EE&coicop18=TOTAL&unit=I25&lang=en",
+            "geo_name": "Estonia",
+            "id": "hicp.EE",
+            "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
+            "latest": {
+                "pop": {
+                    "change": -0.0711302,
+                    "date": "2026-10-01",
+                    "value": 0.5568891
+                },
+                "yoy": {
+                    "change": 0.48194,
+                    "date": "2026-10-01",
+                    "value": 3.600752
+                },
+                "level": {
+                    "change": 0.58,
+                    "date": "2026-10-01",
+                    "value": 104.73
+                }
+            },
+            "concept": "hicp",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, m/m",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "HICP inflation",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=TOT_X_NRG_FOOD&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp_core.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -0.160899,
+                    "date": "2026-10-01",
+                    "value": 3.697462
+                },
+                "level": {
+                    "change": -0.1,
+                    "date": "2026-10-01",
+                    "value": 104.61
+                }
+            },
+            "concept": "hicp_core",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Core inflation (excl. energy, food, alcohol, tobacco)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-10-01",
+            "first_date": "1999-12-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=EA21&coicop18=TOT_X_NRG_FOOD&unit=I25&lang=en",
+            "geo_name": "Euro area",
+            "id": "hicp_core.EA21",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 0.04252,
+                    "date": "2026-10-01",
+                    "value": 2.552939
+                },
+                "level": {
+                    "change": 0.33,
+                    "date": "2026-10-01",
+                    "value": 103.64
+                }
+            },
+            "concept": "hicp_core",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Core inflation (excl. energy, food, alcohol, tobacco)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=SERV&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp_services.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -0.220069,
+                    "date": "2026-10-01",
+                    "value": 6.71413
+                },
+                "level": {
+                    "change": -0.8,
+                    "date": "2026-10-01",
+                    "value": 107.92
+                }
+            },
+            "concept": "hicp_services",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Services",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-10-01",
+            "first_date": "1999-12-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=EA21&coicop18=SERV&unit=I25&lang=en",
+            "geo_name": "Euro area",
+            "id": "hicp_services.EA21",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 0.054917,
+                    "date": "2026-10-01",
+                    "value": 3.297356
+                },
+                "level": {
+                    "change": 0.2,
+                    "date": "2026-10-01",
+                    "value": 104.32
+                }
+            },
+            "concept": "hicp_services",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Services",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=IGD_NNRG&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp_goods.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -0.0347944,
+                    "date": "2026-10-01",
+                    "value": 0.7749627
+                },
+                "level": {
+                    "change": 0.59,
+                    "date": "2026-10-01",
+                    "value": 101.43
+                }
+            },
+            "concept": "hicp_goods",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Non-energy industrial goods",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=FOOD&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp_food.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 0.3981678,
+                    "date": "2026-10-01",
+                    "value": 0.8949881
+                },
+                "level": {
+                    "change": 0.32,
+                    "date": "2026-10-01",
+                    "value": 101.46
+                }
+            },
+            "concept": "hicp_food",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Food, alcohol and tobacco",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-10-01",
+            "first_date": "1996-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?geo=LT&coicop18=NRG&unit=I25&lang=en",
+            "geo_name": "Lithuania",
+            "id": "hicp_energy.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -0.379,
+                    "date": "2026-10-01",
+                    "value": 32.61497
+                },
+                "level": {
+                    "change": 0.59,
+                    "date": "2026-10-01",
+                    "value": 128.61
+                }
+            },
+            "concept": "hicp_energy",
+            "stale": false,
+            "group": "hicp_components",
+            "freq": "M",
+            "last_period": "Oct 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2025 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2025 = 100",
+            "title": "Energy",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "prc_hicp_minr"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=LT&s_adj=SCA&unit=PD20_EUR&lang=en&na_item=B1GQ",
+            "geo_name": "Lithuania",
+            "id": "gdp_deflator.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 1.450683,
+                    "date": "2026-07-01",
+                    "value": 6.851749
+                },
+                "level": {
+                    "change": 3.696,
+                    "date": "2026-07-01",
+                    "value": 153.375
+                }
+            },
+            "concept": "gdp_deflator",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2020 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2020 = 100",
+            "title": "GDP deflator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=EA21&s_adj=SCA&unit=PD20_EUR&lang=en&na_item=B1GQ",
+            "geo_name": "Euro area",
+            "id": "gdp_deflator.EA21",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 0.057417,
+                    "date": "2026-04-01",
+                    "value": 2.433817
+                },
+                "level": {
+                    "change": 0.722,
+                    "date": "2026-04-01",
+                    "value": 122.812
+                }
+            },
+            "concept": "gdp_deflator",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2020 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "inflation",
+            "default_view": "yoy",
+            "unit": "index, 2020 = 100",
+            "title": "GDP deflator",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_gdp"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sd_demand.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.282543,
+                    "date": "2026-08-01",
+                    "value": 1.561448
+                }
+            },
+            "concept": "sd_demand",
+            "stale": false,
+            "group": "sd_hicp",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Demand-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sd_supply.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.474965,
+                    "date": "2026-08-01",
+                    "value": 2.592016
+                }
+            },
+            "concept": "sd_supply",
+            "stale": false,
+            "group": "sd_hicp",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Supply-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sd_ambiguous.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.056986,
+                    "date": "2026-08-01",
+                    "value": 0.1811815
+                }
+            },
+            "concept": "sd_ambiguous",
+            "stale": false,
+            "group": "sd_hicp",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Ambiguous",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sd_uncovered.LT",
+            "notes": "HICP groups without a monthly activity indicator (household energy, rents, dwelling and health services, recreation and cultural services, education, insurance, personal-care services, ...), plus groups not yet estimable.",
+            "latest": {
+                "level": {
+                    "change": 0.081641,
+                    "date": "2026-08-01",
+                    "value": 1.265434
+                }
+            },
+            "concept": "sd_uncovered",
+            "stale": false,
+            "group": "sd_hicp",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Not covered",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2004-10-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdq_demand.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.5315737,
+                    "date": "2026-04-01",
+                    "value": 0.5672239
+                }
+            },
+            "concept": "sdq_demand",
+            "stale": false,
+            "group": "sd_deflator",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of consumption-deflator inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of consumption-deflator inflation, y/y",
+            "title": "Demand-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-10-30",
+            "source_ref": "model supply_demand_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2004-10-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdq_supply.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.518325,
+                    "date": "2026-04-01",
+                    "value": 3.15863
+                }
+            },
+            "concept": "sdq_supply",
+            "stale": false,
+            "group": "sd_deflator",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of consumption-deflator inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of consumption-deflator inflation, y/y",
+            "title": "Supply-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-10-30",
+            "source_ref": "model supply_demand_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2004-10-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdq_ambiguous.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.250428,
+                    "date": "2026-04-01",
+                    "value": 2.07771
+                }
+            },
+            "concept": "sdq_ambiguous",
+            "stale": false,
+            "group": "sd_deflator",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of consumption-deflator inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of consumption-deflator inflation, y/y",
+            "title": "Ambiguous",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-10-30",
+            "source_ref": "model supply_demand_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "1996-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdq_total.LT",
+            "notes": "Quarterly national accounts, household consumption split into durable, semi-durable and non-durable goods and services. Coarse (4 groups) — a cross-check on the monthly HICP decomposition.",
+            "latest": {
+                "level": {
+                    "change": 1.300328,
+                    "date": "2026-04-01",
+                    "value": 5.803564
+                }
+            },
+            "concept": "sdq_total",
+            "stale": false,
+            "group": "sd_deflator",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "% y/y",
+            "title": "Household consumption deflator",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-10-30",
+            "source_ref": "model supply_demand_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdc_demand.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.188273,
+                    "date": "2026-08-01",
+                    "value": 2.303486
+                }
+            },
+            "concept": "sdc_demand",
+            "stale": false,
+            "group": "sd_core",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Demand-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdc_supply.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.2481412,
+                    "date": "2026-08-01",
+                    "value": -0.06189038
+                }
+            },
+            "concept": "sdc_supply",
+            "stale": false,
+            "group": "sd_core",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Supply-driven",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdc_ambiguous.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.1419814,
+                    "date": "2026-08-01",
+                    "value": 0.05179585
+                }
+            },
+            "concept": "sdc_ambiguous",
+            "stale": false,
+            "group": "sd_core",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Ambiguous",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2004-04-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "sdc_uncovered.LT",
+            "notes": "Core groups without a monthly activity indicator (rents and dwelling services, health, recreation and cultural services, education, insurance, personal-care services, ...), plus groups not yet estimable.",
+            "latest": {
+                "level": {
+                    "change": 0.131034,
+                    "date": "2026-08-01",
+                    "value": 1.966385
+                }
+            },
+            "concept": "sdc_uncovered",
+            "stale": false,
+            "group": "sd_core",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Not covered",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model supply_demand_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1998-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=LT&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=TOTAL",
+            "geo_name": "Lithuania",
+            "id": "unemp_rate.LT",
+            "notes": "Monthly, seasonally adjusted, ages 15-74. Monthly figures for LT are model-based estimates benchmarked to the quarterly Labour Force Survey.",
+            "latest": {
+                "yoy_diff": {
+                    "change": 0.4,
+                    "date": "2026-09-01",
+                    "value": -0.4
+                },
+                "level": {
+                    "change": 0.1,
+                    "date": "2026-09-01",
+                    "value": 6.2
+                }
+            },
+            "concept": "unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force",
+            "title": "Unemployment rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-09-01",
+            "first_date": "2000-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=EA21&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=TOTAL",
+            "geo_name": "Euro area",
+            "id": "unemp_rate.EA21",
+            "notes": "Monthly, seasonally adjusted, ages 15-74. Monthly figures for LT are model-based estimates benchmarked to the quarterly Labour Force Survey.",
+            "latest": {
+                "yoy_diff": {
+                    "change": 0,
+                    "date": "2026-09-01",
+                    "value": 0.2
+                },
+                "level": {
+                    "change": 0,
+                    "date": "2026-09-01",
+                    "value": 6.5
+                }
+            },
+            "concept": "unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force",
+            "title": "Unemployment rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2026-09-01",
+            "first_date": "1998-04-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=LV&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=TOTAL",
+            "geo_name": "Latvia",
+            "id": "unemp_rate.LV",
+            "notes": "Monthly, seasonally adjusted, ages 15-74. Monthly figures for LT are model-based estimates benchmarked to the quarterly Labour Force Survey.",
+            "latest": {
+                "yoy_diff": {
+                    "change": 0.2,
+                    "date": "2026-09-01",
+                    "value": 0.3
+                },
+                "level": {
+                    "change": 0,
+                    "date": "2026-09-01",
+                    "value": 7.3
+                }
+            },
+            "concept": "unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force",
+            "title": "Unemployment rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2026-09-01",
+            "first_date": "2000-02-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=EE&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=TOTAL",
+            "geo_name": "Estonia",
+            "id": "unemp_rate.EE",
+            "notes": "Monthly, seasonally adjusted, ages 15-74. Monthly figures for LT are model-based estimates benchmarked to the quarterly Labour Force Survey.",
+            "latest": {
+                "yoy_diff": {
+                    "change": 0.2,
+                    "date": "2026-09-01",
+                    "value": 0.9
+                },
+                "level": {
+                    "change": 0.2,
+                    "date": "2026-09-01",
+                    "value": 8
+                }
+            },
+            "concept": "unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force",
+            "title": "Unemployment rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1998-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=LT&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=Y_LT25",
+            "geo_name": "Lithuania",
+            "id": "youth_unemp_rate.LT",
+            "notes": "",
+            "latest": {
+                "ma:3": {
+                    "change": 0.83334,
+                    "date": "2026-09-01",
+                    "value": 12.86667
+                },
+                "level": {
+                    "change": 1.5,
+                    "date": "2026-09-01",
+                    "value": 14
+                }
+            },
+            "concept": "youth_unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force under 25"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "% of labour force under 25"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force under 25",
+            "title": "Youth unemployment rate (under 25)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-09-01",
+            "first_date": "2000-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=EA21&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=Y_LT25",
+            "geo_name": "Euro area",
+            "id": "youth_unemp_rate.EA21",
+            "notes": "",
+            "latest": {
+                "ma:3": {
+                    "change": 0.06667,
+                    "date": "2026-09-01",
+                    "value": 15.2
+                },
+                "level": {
+                    "change": 0.3,
+                    "date": "2026-09-01",
+                    "value": 15.4
+                }
+            },
+            "concept": "youth_unemp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force under 25"
+                },
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "% of labour force under 25"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force under 25",
+            "title": "Youth unemployment rate (under 25)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-05",
+            "source_ref": "une_rt_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_q?geo=LT&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=Y15-74",
+            "geo_name": "Lithuania",
+            "id": "unemp_rate_q.LT",
+            "notes": "Quarterly Labour Force Survey; paired with the vacancy rate for the Beveridge curve.",
+            "latest": {
+                "level": {
+                    "change": -0.7,
+                    "date": "2026-04-01",
+                    "value": 6.4
+                }
+            },
+            "concept": "unemp_rate_q",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of labour force"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of labour force",
+            "title": "Unemployment rate (quarterly, LFS)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "une_rt_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_q?geo=LT&s_adj=SA&unit=THS_PER&lang=en&sex=T&age=Y15-74",
+            "geo_name": "Lithuania",
+            "id": "unemployed_q.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": -23.39303,
+                    "date": "2026-04-01",
+                    "value": -14.65517
+                },
+                "level": {
+                    "change": -13,
+                    "date": "2026-04-01",
+                    "value": 99
+                }
+            },
+            "concept": "unemployed_q",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "thousand persons"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "thousand persons",
+            "title": "Unemployed persons",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "une_rt_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_q?geo=LT&s_adj=SA&unit=PC_POP&lang=en&sex=T&age=Y20-64&indic_em=EMP_LFS",
+            "geo_name": "Lithuania",
+            "id": "emp_rate.LT",
+            "notes": "",
+            "latest": {
+                "yoy_diff": {
+                    "change": 0,
+                    "date": "2026-04-01",
+                    "value": 0.6
+                },
+                "level": {
+                    "change": -0.3,
+                    "date": "2026-04-01",
+                    "value": 80.3
+                }
+            },
+            "concept": "emp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of population 20-64"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of population 20-64",
+            "title": "Employment rate (20-64)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "lfsi_emp_q"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_q?geo=EA21&s_adj=SA&unit=PC_POP&lang=en&sex=T&age=Y20-64&indic_em=EMP_LFS",
+            "geo_name": "Euro area",
+            "id": "emp_rate.EA21",
+            "notes": "",
+            "latest": {
+                "yoy_diff": {
+                    "change": -0.1,
+                    "date": "2026-04-01",
+                    "value": 0.2
+                },
+                "level": {
+                    "change": 0,
+                    "date": "2026-04-01",
+                    "value": 75.9
+                }
+            },
+            "concept": "emp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of population 20-64"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of population 20-64",
+            "title": "Employment rate (20-64)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "lfsi_emp_q"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_q?geo=LV&s_adj=SA&unit=PC_POP&lang=en&sex=T&age=Y20-64&indic_em=EMP_LFS",
+            "geo_name": "Latvia",
+            "id": "emp_rate.LV",
+            "notes": "",
+            "latest": {
+                "yoy_diff": {
+                    "change": -0.9,
+                    "date": "2026-04-01",
+                    "value": -0.2
+                },
+                "level": {
+                    "change": 0.4,
+                    "date": "2026-04-01",
+                    "value": 78.3
+                }
+            },
+            "concept": "emp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of population 20-64"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of population 20-64",
+            "title": "Employment rate (20-64)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "lfsi_emp_q"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_q?geo=EE&s_adj=SA&unit=PC_POP&lang=en&sex=T&age=Y20-64&indic_em=EMP_LFS",
+            "geo_name": "Estonia",
+            "id": "emp_rate.EE",
+            "notes": "",
+            "latest": {
+                "yoy_diff": {
+                    "change": -0.5,
+                    "date": "2026-04-01",
+                    "value": 0.3
+                },
+                "level": {
+                    "change": 0.2,
+                    "date": "2026-04-01",
+                    "value": 81.9
+                }
+            },
+            "concept": "emp_rate",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of population 20-64"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of population 20-64",
+            "title": "Employment rate (20-64)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "lfsi_emp_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2009-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_q?geo=LT&s_adj=SA&unit=PC_POP&lang=en&sex=T&age=Y20-64&indic_em=ACT",
+            "geo_name": "Lithuania",
+            "id": "act_rate.LT",
+            "notes": "",
+            "latest": {
+                "yoy_diff": {
+                    "change": -1.4,
+                    "date": "2026-04-01",
+                    "value": -0.1
+                },
+                "level": {
+                    "change": -1,
+                    "date": "2026-04-01",
+                    "value": 86
+                }
+            },
+            "concept": "act_rate",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of population 20-64"
+                },
+                {
+                    "label": "Change on a year earlier",
+                    "id": "yoy_diff",
+                    "unit": "pp"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of population 20-64",
+            "title": "Activity rate (20-64)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-06",
+            "source_ref": "lfsi_emp_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-07-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_pe?geo=LT&s_adj=SCA&unit=THS_PER&lang=en&na_item=EMP_DC",
+            "geo_name": "Lithuania",
+            "id": "employment.LT",
+            "notes": "Total employment, domestic concept, seasonally and calendar adjusted.",
+            "latest": {
+                "pop": {
+                    "change": -0.068174,
+                    "date": "2026-07-01",
+                    "value": 0.1268627
+                },
+                "yoy": {
+                    "change": -0.5646723,
+                    "date": "2026-07-01",
+                    "value": -0.2400888
+                },
+                "level": {
+                    "change": 1.89,
+                    "date": "2026-07-01",
+                    "value": 1491.69
+                }
+            },
+            "concept": "employment",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q3",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "thousand persons"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "thousand persons",
+            "title": "Employment (national accounts)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_pe"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-04-01",
+            "first_date": "1995-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_pe?geo=EA21&s_adj=SCA&unit=THS_PER&lang=en&na_item=EMP_DC",
+            "geo_name": "Euro area",
+            "id": "employment.EA21",
+            "notes": "Total employment, domestic concept, seasonally and calendar adjusted.",
+            "latest": {
+                "pop": {
+                    "change": 0.03761049,
+                    "date": "2026-04-01",
+                    "value": 0.1217779
+                },
+                "yoy": {
+                    "change": -0.0062633,
+                    "date": "2026-04-01",
+                    "value": 0.5063814
+                },
+                "level": {
+                    "change": 214.7,
+                    "date": "2026-04-01",
+                    "value": 176535.7
+                }
+            },
+            "concept": "employment",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "% change, q/q",
+                    "id": "pop",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "thousand persons"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "thousand persons",
+            "title": "Employment (national accounts)",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-11-10",
+            "source_ref": "namq_10_pe"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2025-10-01",
+            "first_date": "2010-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=LT&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JVR",
+            "geo_name": "Lithuania",
+            "id": "jvr.LT",
+            "notes": "NACE Rev. 2.1, industry, construction and services (B-T). Successor of jvs_q_nace2 (frozen 2025-Q4).",
+            "latest": {
+                "level": {
+                    "change": 0.1,
+                    "date": "2025-10-01",
+                    "value": 2.3
+                }
+            },
+            "concept": "jvr",
+            "stale": true,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2025 Q4",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of posts"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of posts",
+            "title": "Job vacancy rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "jvs_q_r21"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-04-01",
+            "first_date": "2006-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=EA21&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JVR",
+            "geo_name": "Euro area",
+            "id": "jvr.EA21",
+            "notes": "NACE Rev. 2.1, industry, construction and services (B-T). Successor of jvs_q_nace2 (frozen 2025-Q4).",
+            "latest": {
+                "level": {
+                    "change": -0.1,
+                    "date": "2026-04-01",
+                    "value": 2.1
+                }
+            },
+            "concept": "jvr",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of posts"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of posts",
+            "title": "Job vacancy rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "jvs_q_r21"
+        },
+        {
+            "geo": "LV",
+            "last_date": "2025-10-01",
+            "first_date": "2008-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=LV&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JVR",
+            "geo_name": "Latvia",
+            "id": "jvr.LV",
+            "notes": "NACE Rev. 2.1, industry, construction and services (B-T). Successor of jvs_q_nace2 (frozen 2025-Q4).",
+            "latest": {
+                "level": {
+                    "change": 0,
+                    "date": "2025-10-01",
+                    "value": 2.2
+                }
+            },
+            "concept": "jvr",
+            "stale": true,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2025 Q4",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of posts"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of posts",
+            "title": "Job vacancy rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "jvs_q_r21"
+        },
+        {
+            "geo": "EE",
+            "last_date": "2025-10-01",
+            "first_date": "2008-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=EE&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JVR",
+            "geo_name": "Estonia",
+            "id": "jvr.EE",
+            "notes": "NACE Rev. 2.1, industry, construction and services (B-T). Successor of jvs_q_nace2 (frozen 2025-Q4).",
+            "latest": {
+                "level": {
+                    "change": 0.1,
+                    "date": "2025-10-01",
+                    "value": 1.6
+                }
+            },
+            "concept": "jvr",
+            "stale": true,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2025 Q4",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "% of posts"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "% of posts",
+            "title": "Job vacancy rate",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "jvs_q_r21"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2025-10-01",
+            "first_date": "2010-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=LT&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JOBVAC",
+            "geo_name": "Lithuania",
+            "id": "vacancies.LT",
+            "notes": "",
+            "latest": {
+                "yoy": {
+                    "change": 3.56525,
+                    "date": "2025-10-01",
+                    "value": 15.50357
+                },
+                "level": {
+                    "change": 680,
+                    "date": "2025-10-01",
+                    "value": 31894
+                }
+            },
+            "concept": "vacancies",
+            "stale": true,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2025 Q4",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "vacancies"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "vacancies",
+            "title": "Job vacancies",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "jvs_q_r21"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "2019-12-01",
+            "source_url": "https://osp.stat.gov.lt/statistiniu-rodikliu-analize?indicator=S10R022",
+            "geo_name": "Lithuania",
+            "id": "vacancies_m.LT",
+            "notes": "Statistics Lithuania experimental statistics, all activities (NACE Rev. 2.1), not seasonally adjusted. Monthly and more recent than the quarterly survey, but a different measure: its quarterly averages ran about 2-3% above the survey's unadjusted counts in 2026.",
+            "latest": {
+                "ma:3": {
+                    "change": -1618.34,
+                    "date": "2026-09-01",
+                    "value": 31773.33
+                },
+                "yoy": {
+                    "change": -12.20583,
+                    "date": "2026-09-01",
+                    "value": -5.832407
+                },
+                "level": {
+                    "change": -44,
+                    "date": "2026-09-01",
+                    "value": 30499
+                }
+            },
+            "concept": "vacancies_m",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "3-month moving average",
+                    "id": "ma:3",
+                    "unit": "vacancies"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "vacancies"
+                },
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                }
+            ],
+            "source": "osp",
+            "section": "labour",
+            "default_view": "ma:3",
+            "unit": "vacancies",
+            "title": "Job vacancies, monthly (experimental)",
+            "source_name": "Statistics Lithuania",
+            "dataset_updated": "2026-10-20",
+            "source_ref": "S10R022_M3060216_2"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2011-01-01",
+            "source_url": "https://osp.stat.gov.lt/statistiniu-rodikliu-analize?indicator=S3R0050",
+            "geo_name": "Lithuania",
+            "id": "wages.LT",
+            "notes": "Statistics Lithuania, whole economy including sole proprietorships, both sexes, gross. Break in 2019 Q1: the tax reform moved employer social contributions to employees and raised gross wages by a factor of 1.289, so y/y growth during 2019 is not comparable.",
+            "latest": {
+                "yoy": {
+                    "change": 0.840746,
+                    "date": "2026-04-01",
+                    "value": 10.14737
+                },
+                "level": {
+                    "change": 73.2,
+                    "date": "2026-04-01",
+                    "value": 2616
+                }
+            },
+            "concept": "wages",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR per month"
+                }
+            ],
+            "source": "osp",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "EUR per month",
+            "title": "Average gross monthly earnings",
+            "source_name": "Statistics Lithuania",
+            "dataset_updated": "2026-09-16",
+            "source_ref": "S3R0050_M3060322"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-08-01",
+            "first_date": "2022-07-01",
+            "source_url": "https://osp.stat.gov.lt/statistiniu-rodikliu-analize?indicator=S10R026",
+            "geo_name": "Lithuania",
+            "id": "wages_m.LT",
+            "notes": "Statistics Lithuania experimental monthly statistics (from July 2022), whole economy excluding sole proprietorships.",
+            "latest": {
+                "yoy": {
+                    "change": 2.79403,
+                    "date": "2026-08-01",
+                    "value": 10.50957
+                },
+                "level": {
+                    "change": -70.3,
+                    "date": "2026-08-01",
+                    "value": 2604.6
+                }
+            },
+            "concept": "wages_m",
+            "stale": false,
+            "group": "",
+            "freq": "M",
+            "last_period": "Aug 2026",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR per month"
+                }
+            ],
+            "source": "osp",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "EUR per month",
+            "title": "Average gross monthly earnings (monthly, experimental)",
+            "source_name": "Statistics Lithuania",
+            "dataset_updated": "2026-10-15",
+            "source_ref": "S10R026_M3060315_3"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2000-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?geo=LT&s_adj=SCA&lcstruct=D1_D4_MD5&unit=I20&lang=en&nace_r2=B-S",
+            "geo_name": "Lithuania",
+            "id": "lci.LT",
+            "notes": "Hourly labour costs, industry, construction and services (NACE Rev. 2 B-S).",
+            "latest": {
+                "yoy": {
+                    "change": 0.747704,
+                    "date": "2026-04-01",
+                    "value": 9.58013
+                },
+                "level": {
+                    "change": 5.4,
+                    "date": "2026-04-01",
+                    "value": 185.3
+                }
+            },
+            "concept": "lci",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2020 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "index, 2020 = 100",
+            "title": "Labour cost index",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-16",
+            "source_ref": "lc_lci_r2_q"
+        },
+        {
+            "geo": "EA21",
+            "last_date": "2026-04-01",
+            "first_date": "2010-01-01",
+            "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?geo=EA21&s_adj=SCA&lcstruct=D1_D4_MD5&unit=I20&lang=en&nace_r2=B-S",
+            "geo_name": "Euro area",
+            "id": "lci.EA21",
+            "notes": "Hourly labour costs, industry, construction and services (NACE Rev. 2 B-S).",
+            "latest": {
+                "yoy": {
+                    "change": -0.032094,
+                    "date": "2026-04-01",
+                    "value": 3.171953
+                },
+                "level": {
+                    "change": 1.2,
+                    "date": "2026-04-01",
+                    "value": 123.6
+                }
+            },
+            "concept": "lci",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "index, 2020 = 100"
+                }
+            ],
+            "source": "eurostat",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "index, 2020 = 100",
+            "title": "Labour cost index",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-16",
+            "source_ref": "lc_lci_r2_q"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2025-10-01",
+            "first_date": "2010-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "vu_ratio.LT",
+            "notes": "Labour-market tightness: job vacancies divided by LFS unemployed persons.",
+            "latest": {
+                "level": {
+                    "change": 0.0320186,
+                    "date": "2025-10-01",
+                    "value": 0.3157822
+                }
+            },
+            "concept": "vu_ratio",
+            "stale": true,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2025 Q4",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "ratio"
+                }
+            ],
+            "source": "derived",
+            "section": "labour",
+            "default_view": "level",
+            "unit": "ratio",
+            "title": "Vacancies per unemployed person",
+            "source_name": "Eurostat",
+            "dataset_updated": "2026-09-15",
+            "source_ref": "ratio(vacancies.LT, unemployed_q.LT)"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-04-01",
+            "first_date": "2011-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "real_wages.LT",
+            "notes": "Gross earnings deflated by the HICP (quarterly average, 2025 = 100). Inherits the 2019 Q1 break in gross wages (tax reform, wages ×1.289).",
+            "latest": {
+                "yoy": {
+                    "change": -0.833901,
+                    "date": "2026-04-01",
+                    "value": 4.783616
+                },
+                "level": {
+                    "change": 18.873,
+                    "date": "2026-04-01",
+                    "value": 2489.69
+                }
+            },
+            "concept": "real_wages",
+            "stale": false,
+            "group": "",
+            "freq": "Q",
+            "last_period": "2026 Q2",
+            "views": [
+                {
+                    "label": "% change, y/y",
+                    "id": "yoy",
+                    "unit": "%"
+                },
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "EUR per month, 2025 prices"
+                }
+            ],
+            "source": "derived",
+            "section": "labour",
+            "default_view": "yoy",
+            "unit": "EUR per month, 2025 prices",
+            "title": "Real average gross earnings",
+            "source_name": "Statistics Lithuania; Eurostat",
+            "dataset_updated": "2026-09-16",
+            "source_ref": "ratio(wages.LT, hicp.LT)"
+        }
+    ],
+    "generated": "2026-11-12T10:28:02.376"
+}
