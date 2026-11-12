@@ -83,15 +83,31 @@ export const SECTIONS = [
   {
     id: "inflation",
     title: "Inflation",
-    intro: "Consumer prices (HICP) and the GDP deflator.",
+    intro: "Consumer prices (HICP) and the GDP deflator first, then two model-based decompositions of what drives inflation in Lithuania.",
     charts: [
+      { type: "subhead", title: "Price data", intro: "Published statistics: Eurostat HICP and national accounts." },
       { type: "lines", title: "HICP inflation", concept: "hicp", view: "yoy" },
+      { type: "lines", title: "Core inflation", concept: "hicp_core", view: "yoy" },
+      {
+        type: "lines", title: "Inflation by component, Lithuania", view: "yoy",
+        series: [
+          { id: "hicp.LT",          label: "All items", headline: true },
+          { id: "hicp_services.LT", label: "Services" },
+          { id: "hicp_goods.LT",    label: "Goods" },
+          { id: "hicp_food.LT",     label: "Food" },
+          { id: "hicp_energy.LT",   label: "Energy" },
+        ],
+      },
+      { type: "lines", title: "GDP deflator", concept: "gdp_deflator", view: "yoy" },
+
+      { type: "subhead", title: "Supply or demand?", tag: "Own estimates",
+        intro: "Did prices rise because demand pushed them up or because supply was disrupted? Each HICP group is labelled every month from its price and quantity surprises (Shapiro method, ECB adaptation)." },
       {
         type: "contrib", wide: true, title: "Supply- and demand-driven inflation", info: "sd", maxYears: 10,
         variants: [
           {
             label: "All items", hint: "Headline HICP inflation",
-            subtitle: "Contributions to HICP inflation, y/y, percentage points. Own estimates (Shapiro method, ECB adaptation)",
+            subtitle: "Contributions to HICP inflation, y/y, percentage points",
             bars: [
               { id: "sd_demand.LT",    label: "Demand-driven", slot: 2 },
               { id: "sd_supply.LT",    label: "Supply-driven", slot: 3 },
@@ -115,20 +131,8 @@ export const SECTIONS = [
       },
       { type: "sdtable", wide: true, title: "Supply or demand, by HICP group" },
       {
-        type: "lines", title: "Inflation by component, Lithuania", view: "yoy",
-        series: [
-          { id: "hicp.LT",          label: "All items", headline: true },
-          { id: "hicp_services.LT", label: "Services" },
-          { id: "hicp_goods.LT",    label: "Goods" },
-          { id: "hicp_food.LT",     label: "Food" },
-          { id: "hicp_energy.LT",   label: "Energy" },
-        ],
-      },
-      { type: "lines", title: "Core inflation", concept: "hicp_core", view: "yoy" },
-      { type: "lines", title: "GDP deflator", concept: "gdp_deflator", view: "yoy" },
-      {
-        type: "contrib", title: "Cross-check: consumption deflator",
-        subtitle: "Household consumption deflator, y/y; contributions in pp. 4 groups from national accounts",
+        type: "contrib", wide: true, title: "Cross-check: household consumption deflator",
+        subtitle: "Household consumption deflator, y/y; contributions in pp. Same method on 4 groups from the quarterly national accounts",
         bars: [
           { id: "sdq_demand.LT",    label: "Demand-driven", slot: 2 },
           { id: "sdq_supply.LT",    label: "Supply-driven", slot: 3 },
@@ -136,6 +140,44 @@ export const SECTIONS = [
         ],
         total: { id: "sdq_total.LT", label: "Deflator inflation" },
         maxYears: 10, info: "sd",
+      },
+
+      { type: "subhead", title: "Cyclical or acyclical?", tag: "Own estimates",
+        intro: "How much of core inflation comes from prices that move with the labour market? Core HICP groups whose inflation has responded to the unemployment gap are cyclical (San Francisco Fed method)." },
+      {
+        type: "contrib", wide: true, title: "Cyclical and acyclical inflation", info: "cy", maxYears: 10,
+        variants: [
+          {
+            label: "Core", hint: "HICP excluding energy, food, alcohol and tobacco",
+            subtitle: "Contributions to core inflation (HICP excl. energy, food, alcohol, tobacco), y/y, percentage points",
+            bars: [
+              { id: "cy_cyclical.LT",     label: "Cyclical",       slot: 1 },
+              { id: "cy_acyclical.LT",    label: "Acyclical",      slot: 4 },
+              { id: "cy_unclassified.LT", label: "Not classified", slot: "faint" },
+            ],
+            total: { id: "hicp_core.LT", view: "yoy", label: "Core inflation" },
+          },
+          {
+            label: "All items", hint: "Headline HICP inflation; food, alcohol, tobacco and energy shown separately",
+            subtitle: "Contributions to HICP inflation, y/y, percentage points",
+            bars: [
+              { id: "cyh_cyclical.LT",     label: "Cyclical",       slot: 1 },
+              { id: "cyh_acyclical.LT",    label: "Acyclical",      slot: 4 },
+              { id: "cyh_noncore.LT",      label: "Food, alcohol, tobacco, energy", slot: "other" },
+              { id: "cyh_unclassified.LT", label: "Not classified", slot: "faint" },
+            ],
+            total: { id: "hicp.LT", view: "yoy", label: "HICP inflation" },
+          },
+        ],
+      },
+      { type: "cytable", wide: true, title: "Which core groups are cyclical?" },
+      {
+        type: "lines", wide: true, title: "Cyclical inflation and the labour market", info: "cy",
+        subtitle: "Percentage points. Cyclical contribution to core inflation, y/y, and the unemployment gap (trend minus actual rate)",
+        series: [
+          { id: "cy_cyclical.LT", label: "Cyclical inflation" },
+          { id: "cy_gap.LT",      label: "Unemployment gap" },
+        ],
       },
     ],
   },

@@ -179,6 +179,12 @@ function renderSections(root) {
       el("h2", {}, sec.title), el("p", { class: "intro" }, sec.intro));
     const grid = el("div", { class: "grid" });
     for (const c of sec.charts) {
+      if (c.type === "subhead") {
+        grid.append(el("div", { class: "subhead" },
+          el("h3", {}, c.title, c.tag ? el("span", { class: "tag" }, c.tag) : null),
+          c.intro ? el("p", {}, c.intro) : null));
+        continue;
+      }
       const card = buildCard(c);
       if (card) grid.append(card);
     }
@@ -206,6 +212,7 @@ function chartSeries(c) {
 function buildCard(c) {
   const card = el("article", { class: c.wide ? "card wide" : "card" });
   if (c.type === "sdtable") return buildSdTable(card, c);
+  if (c.type === "cytable") return buildCyTable(card, c);
   const st = { view: null, hidden: new Set(), table: false };
 
   if (c.type === "lines") {
@@ -225,12 +232,13 @@ function buildCard(c) {
     const sub = el("p", { class: "subtitle" });
     const chart = el("div", { class: "chart", role: "img" });
     const foot = el("div", { class: "foot" });
-    card.append(el("div", { class: "card-head" }, titleRow(c.title, series.map((s) => s.id)), el("div", { class: "controls" }, viewBtns)),
+    card.append(el("div", { class: "card-head" }, titleRow(c.title, series.map((s) => s.id)),
+        el("div", { class: "controls" }, viewBtns, c.info ? infoButton(c.info) : null)),
       sub, legend, chart, foot);
 
     const draw = async () => {
       const vm = viewMeta(series[0].id, st.view);
-      sub.textContent = vm.label === "Level" ? meta(series[0].id).unit : `${vm.label}${vm.unit === "%" ? "" : ", " + vm.unit}`;
+      sub.textContent = c.subtitle ?? (vm.label === "Level" ? meta(series[0].id).unit : `${vm.label}${vm.unit === "%" ? "" : ", " + vm.unit}`);
       legend.replaceChildren(...(series.length > 1 ? series.map((s) => el("button", {
         type: "button", "aria-pressed": String(!st.hidden.has(s.id)),
         onclick: () => { st.hidden.has(s.id) ? st.hidden.delete(s.id) : st.hidden.add(s.id); draw(); },
@@ -267,7 +275,7 @@ function buildCard(c) {
       }, v.label))) : null;
     const allIds = (c.variants ?? [c]).flatMap((v) => [v.total.id, ...v.bars.map((b) => b.id)]);
     card.append(el("div", { class: "card-head" }, titleRow(c.title, allIds),
-        el("div", { class: "controls" }, variantBtns, c.info === "sd" ? sdInfoButton() : null)),
+        el("div", { class: "controls" }, variantBtns, c.info ? infoButton(c.info) : null)),
       sub, legend, chart, foot);
     const draw = async () => {
       const v = cur();
@@ -477,19 +485,25 @@ function drawScatter(node, c, xs, ys) {
 let sdData = null;
 const getSdData = () => (sdData ??= fetch("data/supply_demand.json").then((r) => r.json()));
 
-function sdInfoButton() {
-  return el("button", { class: "info-btn", type: "button", "aria-haspopup": "dialog", onclick: openSdInfo },
+let cyData = null;
+const getCyData = () => (cyData ??= fetch("data/cyclical.json").then((r) => r.json()));
+const INFO = {
+  sd: { load: () => getSdData(), content: (d) => sdInfoContent(d) },
+  cy: { load: () => getCyData(), content: (d) => cyInfoContent(d) },
+};
+
+function infoButton(kind) {
+  return el("button", { class: "info-btn", type: "button", "aria-haspopup": "dialog", onclick: () => openInfo(kind) },
     el("span", { "aria-hidden": "true" }, "ⓘ"), " How this is built");
 }
 
-async function openSdInfo() {
-  let dlg = document.getElementById("sd-info");
+async function openInfo(kind) {
+  let dlg = document.getElementById(`${kind}-info`);
   if (!dlg) {
-    dlg = el("dialog", { id: "sd-info", class: "info-dialog", "aria-labelledby": "sd-info-title" });
+    dlg = el("dialog", { id: `${kind}-info`, class: "info-dialog", "aria-labelledby": `${kind}-info-title` });
     dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });   // click on backdrop
     document.body.append(dlg);
-    const d = await getSdData();
-    dlg.append(sdInfoContent(d));
+    dlg.append(INFO[kind].content(await INFO[kind].load()));
   }
   dlg.showModal();
 }
@@ -514,7 +528,7 @@ function sdInfoContent(d) {
       el("li", {}, "Quantities: Lithuania publishes no monthly consumption volumes by product, so — as the ECB does for the euro area — each group is paired with the closest monthly activity indicator: retail sales volumes for goods, services turnover deflated by the group's own price index for services, and energy statistics for electricity and heat (see “Energy” below)."),
       el("li", {}, `For each group, monthly price growth and activity growth are each explained by their own past (${S.lags} lags of both) and calendar-month effects, over a rolling window of up to ${S.max_window / 12} years (at least ${S.min_window / 12} years of data).`),
       el("li", {}, `The surprise in the latest month (the regression residual) sets the label: same sign → demand, opposite sign → supply, either surprise below ${S.ambiguity_sd} robust standard deviations → ambiguous.`),
-      el("li", {}, "Contribution of a group = HICP weight × monthly price change, booked under its label. Year-on-year figures add up the last 12 months, then are scaled so that they add up to the official annual rate (adding up monthly rates understates it when inflation is high, by about 2 pp in late 2022)."),
+      el("li", {}, "Contribution of a group = HICP weight × monthly price change, booked under its label. The weight is updated within the year for the group's price change since December, as the chain-linked HICP requires. Year-on-year figures add up the last 12 months, then are scaled so that they add up to the official annual rate (adding up monthly rates understates it when inflation is high, by about 2 pp in late 2022)."),
       el("li", {}, "Groups without an activity indicator, or whose indicator does not reach back far enough yet, are shown as “not covered”. That bar is headline inflation minus the matched groups, so the four parts add up to HICP inflation (the sum of 12 monthly changes is slightly below the compounded y/y rate when inflation is high).")),
 
     el("h3", {}, "What is covered"),
@@ -590,7 +604,7 @@ function sdInfoContent(d) {
 // ── supply/demand table by HICP group ───────────────────────────────────────
 function buildSdTable(card, c) {
   const body = el("div", {}, el("p", { class: "loading" }, "Loading…"));
-  card.append(el("div", { class: "card-head" }, titleRow(c.title, ["sd_demand.LT"]), sdInfoButton()),
+  card.append(el("div", { class: "card-head" }, titleRow(c.title, ["sd_demand.LT"]), infoButton("sd")),
     el("p", { class: "subtitle" }, "Contributions to HICP inflation over the last 12 months, percentage points"), body);
   getSdData().then((d) => {
     const L = utc(d.latest), sum = d.latest_yoy, rg = d.range_yoy;
@@ -621,6 +635,95 @@ function buildSdTable(card, c) {
           el("td", { class: "ind" }, x.indicator),
           el("td", { title: `${x.quality} quality proxy` }, qual[x.quality] ?? x.quality)))))));
   }).catch((e) => body.replaceChildren(el("p", { class: "error" }, `Could not load supply_demand.json: ${e.message}`)));
+  return card;
+}
+
+// ── cyclical / acyclical: "How this is built" panel and group table ──────────
+const CY_DOT = { cyclical: 1, acyclical: 4 };
+const cyDot = (cls) => el("span", { class: "dot", style: CY_DOT[cls] ? `background:${slotColor(CY_DOT[cls])}` : "" });
+
+function cyInfoContent(d) {
+  const S = d.settings, c = d.core_latest_yoy, rg = d.range_yoy, L = utc(d.latest);
+  const nCyc = d.table.filter((x) => x.class === "cyclical").length;
+  const nCls = d.table.filter((x) => x.class !== "none").length;
+  const share = Math.round(100 * d.cyclical_weight / d.classified_weight);
+  const close = el("button", { class: "dialog-close", type: "button", "aria-label": "Close",
+    onclick: (e) => e.currentTarget.closest("dialog").close() }, "×");
+  const ref = (t, href) => el("li", {}, el("a", { href, target: "_blank", rel: "noopener" }, t));
+  return el("div", { class: "dialog-body" },
+    el("div", { class: "dialog-head" }, el("h2", { id: "cy-info-title" }, "Cyclical and acyclical inflation: how it is built"), close),
+
+    el("h3", {}, "The idea"),
+    el("p", {}, "Some prices move with the business cycle: when the labour market is tight and incomes grow, restaurants, personal services or repairs can raise prices more. Others are driven by world prices, regulation or technology, whatever the state of the economy. Following Mahedy and Shapiro at the Federal Reserve Bank of San Francisco, each core HICP group is tested once for whether its inflation has responded to the unemployment gap. Groups that have are ", el("em", {}, "cyclical"), ", the rest ", el("em", {}, "acyclical"), ". Adding up the price changes of each class, weighted by HICP weights, splits core inflation into the two."),
+
+    el("h3", {}, "Step by step"),
+    el("ol", {},
+      el("li", {}, `Prices: monthly HICP index for ${d.table.length} core groups (ECOICOP 2, 3-digit; food, alcohol, tobacco, household energy and motor fuels are outside core).`),
+      el("li", {}, `Slack: the unemployment gap, trend minus actual monthly unemployment rate (Eurostat une_rt_m). The trend is a Hodrick–Prescott filter (λ = ${S.hp_lambda}); a positive gap means a tight labour market.`),
+      el("li", {}, `For each group, monthly inflation is regressed on calendar-month effects, its own inflation over the previous 12 months and the gap in the previous month, over ${S.window_start.slice(0, 4)}–${S.window_end.slice(0, 4)}. That window covers the 2008–10 boom and bust and stops before COVID and the 2022 energy shock.`),
+      el("li", {}, `A group is cyclical if the gap coefficient is positive with a t-statistic above ${S.t_crit} (Newey–West standard errors). The classification is then fixed for the whole sample, as at the San Francisco Fed.`),
+      el("li", {}, "Contribution of a group = HICP weight (updated within the year for the group's price change since December, as the chain-linked index requires) × monthly price change. Year-on-year figures add up the last 12 months and are scaled to add up to the official annual rate."),
+      el("li", {}, "Groups with too short a history (e.g. software, published from 2024) are “not classified”; that bar also absorbs small differences between core and its groups.")),
+
+    el("h3", {}, "Result"),
+    el("p", {}, `${nCyc} of ${nCls} classified groups are cyclical, ${share}% of the classified core basket by weight (in the euro area the same method gives about 30%). `,
+      `In ${periodLabel(L, "M")}, ${fmt(c.cyclical, "pp")} pp of core inflation is cyclical and ${fmt(c.acyclical, "pp")} pp acyclical; across ${d.specs.length} alternative specifications the cyclical part ranges ${fmt(rg.cyclical[0], "pp")}–${fmt(rg.cyclical[1], "pp")} pp. `,
+      d.corr_in != null ? `The 12-month cyclical contribution moves with the unemployment gap: correlation ${d3.format(".2f")(d.corr_in)} inside the estimation window and ${d3.format(".2f")(d.corr_out)} after it.` : ""),
+
+    el("h3", {}, "How this differs from the San Francisco Fed"),
+    el("div", { class: "table-wrap" }, el("table", { class: "data" },
+      el("thead", {}, el("tr", {}, ["", "San Francisco Fed (US)", "Here (Lithuania)"].map((h) => el("th", {}, h)))),
+      el("tbody", {},
+        el("tr", {}, el("td", { class: "ind" }, "Prices"), el("td", { class: "ind" }, "Core PCE categories"), el("td", { class: "ind" }, `${d.table.length} core HICP groups`)),
+        el("tr", {}, el("td", { class: "ind" }, "Slack"), el("td", { class: "ind" }, "Unemployment gap (CBO natural rate)"), el("td", { class: "ind" }, "Unemployment gap (HP trend; no official monthly natural rate)")),
+        el("tr", {}, el("td", { class: "ind" }, "Window"), el("td", { class: "ind" }, "1988–2007"), el("td", { class: "ind" }, `${S.window_start.slice(0, 4)}–${S.window_end.slice(0, 4)}`)),
+        el("tr", {}, el("td", { class: "ind" }, "Seasonality"), el("td", { class: "ind" }, "Seasonally adjusted data"), el("td", { class: "ind" }, "Calendar-month effects (HICP groups are not adjusted)")),
+        el("tr", {}, el("td", { class: "ind" }, "Rule"), el("td", { class: "ind" }, "t > 1.96 on the gap"), el("td", { class: "ind" }, `t > ${S.t_crit}, Newey–West`))))),
+
+    el("h3", {}, "Caveats"),
+    el("ul", {},
+      el("li", {}, "Convergence can look like the cycle: Lithuanian services inflation was high while unemployment trended down, so some groups may be labelled cyclical for structural reasons. The lagged-inflation term absorbs part of this."),
+      el("li", {}, "Cyclical groups also pass on cost shocks. Restaurants and personal services raised prices in 2022 partly because food and energy costs rose, so the 2022 cyclical peak is not all labour-market pressure. The supply/demand decomposition above helps to tell the two apart."),
+      el("li", {}, "With one large cycle in the window, the classification of groups near the threshold is fragile. The table shows how many of the alternative specifications agree."),
+      el("li", {}, "The classification is fixed: a group whose behaviour changed after 2019 keeps its label.")),
+
+    el("h3", {}, "References"),
+    el("ul", {},
+      el("li", {}, "Mahedy and Shapiro (2017), What's Down with Inflation?, FRBSF Economic Letter 2017-35"),
+      ref("Shapiro (2020, revised 2022), A Simple Framework to Monitor Inflation, FRBSF Working Paper 2020-29", "https://www.frbsf.org/wp-content/uploads/wp2020-29.pdf"),
+      ref("Federal Reserve Bank of San Francisco, Cyclical and Acyclical Core PCE Inflation (data page)", "https://www.frbsf.org/research-and-insights/data-and-indicators/cyclical-and-acyclical-core-pce-inflation/")),
+    el("p", { class: "dialog-foot" }, "Own estimates from Eurostat data. Groups and settings: catalogue/models/cyclical.toml."));
+}
+
+function buildCyTable(card, c) {
+  const body = el("div", {}, el("p", { class: "loading" }, "Loading…"));
+  card.append(el("div", { class: "card-head" }, titleRow(c.title, ["cy_cyclical.LT"]), infoButton("cy")),
+    el("p", { class: "subtitle" }, "Core HICP groups, sorted by how strongly their inflation has responded to the unemployment gap"), body);
+  getCyData().then((d) => {
+    const nSpecs = d.specs.length;
+    const rows = [...d.table].sort((a, b) => (b.t ?? -99) - (a.t ?? -99));
+    const agree = (x) => x.class === "none" ? "–" : `${Object.values(x.robustness).filter((v) => v === x.class).length} of ${nSpecs}`;
+    const f2 = (v) => (v == null ? "–" : d3.format("+.2f")(v).replace("+0.00", "0.00"));
+    const nm = { cyclical: "Cyclical", acyclical: "Acyclical", none: "Not classified" };
+    body.replaceChildren(
+      el("p", { class: "sd-summary" },
+        `${periodLabel(utc(d.latest), "M")}: of ${fmt(d.core_latest_yoy.cyclical + d.core_latest_yoy.acyclical + d.core_latest_yoy.unclassified, "%")}% core inflation, `,
+        el("strong", {}, `${fmt(d.core_latest_yoy.cyclical, "pp")} pp cyclical`), " and ",
+        el("strong", {}, `${fmt(d.core_latest_yoy.acyclical, "pp")} pp acyclical`), ". ",
+        `Cyclical groups make up ${Math.round(100 * d.cyclical_weight / d.classified_weight)}% of the classified core basket. `,
+        `“Robust” counts the ${nSpecs} alternative specifications (${d.specs.join("; ")}) that give the same class.`),
+      el("div", { class: "table-wrap tall" }, el("table", { class: "data" },
+        el("thead", {}, el("tr", {}, ["Core HICP group", "Weight ‰", "Inflation y/y %", "Class", "t-statistic", "Robust", "Contribution, 12 months, pp"]
+          .map((h) => el("th", {}, h)))),
+        el("tbody", {}, rows.map((x) => el("tr", {},
+          el("td", {}, cyDot(x.class), x.label),
+          el("td", {}, x.weight == null ? "–" : d3.format(".1f")(x.weight)),
+          el("td", {}, x.inflation_yoy == null ? "–" : d3.format(".1f")(x.inflation_yoy)),
+          el("td", {}, nm[x.class] ?? x.class),
+          el("td", {}, x.t == null ? "–" : d3.format(".1f")(x.t)),
+          el("td", {}, agree(x)),
+          el("td", {}, f2(x.contrib_core_12m))))))));
+  }).catch((e) => body.replaceChildren(el("p", { class: "error" }, `Could not load cyclical.json: ${e.message}`)));
   return card;
 }
 
@@ -686,7 +789,8 @@ async function main() {
   renderChrome();
   setupTheme();
   rerenderAll();
-  if (location.hash === "#how-supply-demand") openSdInfo();   // shareable link to the explanation
+  if (location.hash === "#how-supply-demand") openInfo("sd");   // shareable links to the explanations
+  if (location.hash === "#how-cyclical") openInfo("cy");
 
   let t;
   let lastW = window.innerWidth;

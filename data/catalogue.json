@@ -2425,6 +2425,294 @@
         {
             "geo": "LT",
             "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cy_cyclical.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.156644,
+                    "date": "2026-09-01",
+                    "value": 2.566949
+                }
+            },
+            "concept": "cy_cyclical",
+            "stale": false,
+            "group": "cy_core",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Cyclical",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cy_acyclical.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.251287,
+                    "date": "2026-09-01",
+                    "value": 1.273837
+                }
+            },
+            "concept": "cy_acyclical",
+            "stale": false,
+            "group": "cy_core",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Acyclical",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cy_unclassified.LT",
+            "notes": "Core groups with too short a price history to classify (e.g. software), and small differences between the core index and its groups.",
+            "latest": {
+                "level": {
+                    "change": 0.00651605,
+                    "date": "2026-09-01",
+                    "value": 0.01757544
+                }
+            },
+            "concept": "cy_unclassified",
+            "stale": false,
+            "group": "cy_core",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of core inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of core inflation, y/y",
+            "title": "Not classified",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cyh_cyclical.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.088078,
+                    "date": "2026-09-01",
+                    "value": 1.54793
+                }
+            },
+            "concept": "cyh_cyclical",
+            "stale": false,
+            "group": "cy_head",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Cyclical",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cyh_acyclical.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": -0.1492805,
+                    "date": "2026-09-01",
+                    "value": 0.7560159
+                }
+            },
+            "concept": "cyh_acyclical",
+            "stale": false,
+            "group": "cy_head",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Acyclical",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cyh_noncore.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.718705,
+                    "date": "2026-09-01",
+                    "value": 3.770856
+                }
+            },
+            "concept": "cyh_noncore",
+            "stale": false,
+            "group": "cy_head",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Food, alcohol, tobacco, energy",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1997-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cyh_unclassified.LT",
+            "notes": "",
+            "latest": {
+                "level": {
+                    "change": 0.003968097,
+                    "date": "2026-09-01",
+                    "value": 0.01059268
+                }
+            },
+            "concept": "cyh_unclassified",
+            "stale": false,
+            "group": "cy_head",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp of HICP inflation, y/y"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp of HICP inflation, y/y",
+            "title": "Not classified",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
+            "first_date": "1998-01-01",
+            "source_url": "",
+            "geo_name": "Lithuania",
+            "id": "cy_gap.LT",
+            "notes": "Trend unemployment (HP filter) minus the actual rate; positive = tight labour market.",
+            "latest": {
+                "level": {
+                    "change": -0.1061833,
+                    "date": "2026-09-01",
+                    "value": 0.457136
+                }
+            },
+            "concept": "cy_gap",
+            "stale": false,
+            "group": "cy_core",
+            "freq": "M",
+            "last_period": "Sep 2026",
+            "views": [
+                {
+                    "label": "Level",
+                    "id": "level",
+                    "unit": "pp (trend minus actual unemployment rate)"
+                }
+            ],
+            "source": "model",
+            "section": "inflation",
+            "default_view": "level",
+            "unit": "pp (trend minus actual unemployment rate)",
+            "title": "Unemployment gap",
+            "source_name": "Own estimates from Eurostat data",
+            "dataset_updated": "2026-11-04",
+            "source_ref": "model cyclical_m"
+        },
+        {
+            "geo": "LT",
+            "last_date": "2026-09-01",
             "first_date": "1998-01-01",
             "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=LT&s_adj=SA&unit=PC_ACT&lang=en&sex=T&age=TOTAL",
             "geo_name": "Lithuania",
@@ -3635,5 +3923,5 @@
             "source_ref": "ratio(wages.LT, hicp.LT)"
         }
     ],
-    "generated": "2026-11-12T10:28:02.376"
+    "generated": "2026-11-12T11:13:54.257"
 }

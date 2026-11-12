@@ -1,0 +1,891 @@
+{
+    "corr_out": 0.46,
+    "core_weight": 607.66,
+    "settings": {
+        "spec": "monthly",
+        "nw_lags": 12,
+        "window_start": "2000-01",
+        "min_coverage": 0.8,
+        "min_obs": 120,
+        "core": "TOT_X_NRG_FOOD",
+        "window_end": "2019-12",
+        "t_crit": 1.96,
+        "gap_avg": 1,
+        "hp_lambda": 129600
+    },
+    "head_latest_yoy": {
+        "h_acyclical": 0.76,
+        "h_noncore": 3.77,
+        "h_cyclical": 1.55,
+        "h_unclassified": 0.01
+    },
+    "range_yoy": {
+        "cyclical": [
+            2.57,
+            3.62
+        ],
+        "acyclical": [
+            0.22,
+            1.27
+        ]
+    },
+    "table": [
+        {
+            "label": "Clothing",
+            "contrib_core_12m": -0.014205249834662648,
+            "code": "CP031",
+            "t": -0.6431848263719943,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.020310712953705616,
+            "beta": -0.013063542384620562,
+            "weight": 32.33,
+            "inflation_yoy": -0.4444005530317985,
+            "n": 240
+        },
+        {
+            "label": "Footwear",
+            "contrib_core_12m": -0.034700693032022195,
+            "code": "CP032",
+            "t": 0.07273336080752633,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.0336524570464461,
+            "beta": 0.002447656300418946,
+            "weight": 13.1,
+            "inflation_yoy": -1.5840984764403099,
+            "n": 240
+        },
+        {
+            "label": "Actual rentals for housing",
+            "contrib_core_12m": 0.2274773884775811,
+            "code": "CP041",
+            "t": 1.1587126320252399,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.18153617906626093,
+            "beta": 0.21034826385367245,
+            "weight": 14.43,
+            "inflation_yoy": 10.021764938662447,
+            "n": 240
+        },
+        {
+            "label": "Maintenance and repair of the dwelling",
+            "contrib_core_12m": 0.1609585187517855,
+            "code": "CP043",
+            "t": 1.147700684782865,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.03483429392352082,
+            "beta": 0.039979342989952434,
+            "weight": 26.54,
+            "inflation_yoy": 3.758429194763968,
+            "n": 240
+        },
+        {
+            "label": "Water supply and other dwelling services",
+            "contrib_core_12m": 0.12454468978809712,
+            "code": "CP044",
+            "t": 2.104620392057876,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.025967312542292762,
+            "beta": 0.0546513355034496,
+            "weight": 16.46,
+            "inflation_yoy": 4.630813096057418,
+            "n": 240
+        },
+        {
+            "label": "Furniture and furnishings",
+            "contrib_core_12m": 0.02785509479096615,
+            "code": "CP051",
+            "t": 2.1210115478374076,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.04328467933351452,
+            "beta": 0.09180730471082349,
+            "weight": 19.93,
+            "inflation_yoy": 0.8468665936036679,
+            "n": 240
+        },
+        {
+            "label": "Household textiles",
+            "contrib_core_12m": 0.006863566118148462,
+            "code": "CP052",
+            "t": 1.811123270614024,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "acyclical",
+            "se": 0.018207215759760476,
+            "beta": 0.03297551215559259,
+            "weight": 2.69,
+            "inflation_yoy": 1.673088622997354,
+            "n": 240
+        },
+        {
+            "label": "Household appliances",
+            "contrib_core_12m": -0.06270777968085918,
+            "code": "CP053",
+            "t": 0.8267217730792283,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.008972574073004069,
+            "beta": 0.0074178223467186374,
+            "weight": 15.43,
+            "inflation_yoy": -2.388266772371417,
+            "n": 240
+        },
+        {
+            "label": "Glassware, tableware and utensils",
+            "contrib_core_12m": 0.01445140375653035,
+            "code": "CP054",
+            "t": 2.9551577921464065,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.020165355135471363,
+            "beta": 0.05959180635998775,
+            "weight": 3.4,
+            "inflation_yoy": 2.6509424453180275,
+            "n": 240
+        },
+        {
+            "label": "Tools and equipment for house and garden",
+            "contrib_core_12m": 0.007309812060190728,
+            "code": "CP055",
+            "t": 2.3744043387436244,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.01603420069114925,
+            "beta": 0.038071675689350805,
+            "weight": 8.74,
+            "inflation_yoy": 0.5256241787122251,
+            "n": 240
+        },
+        {
+            "label": "Routine household maintenance",
+            "contrib_core_12m": 0.13937549699110519,
+            "code": "CP056",
+            "t": 4.084125248063287,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.02281939746300227,
+            "beta": 0.09319727732423888,
+            "weight": 15.85,
+            "inflation_yoy": 5.453046077723944,
+            "n": 240
+        },
+        {
+            "label": "Medicines and health products",
+            "contrib_core_12m": 0.25237804239942474,
+            "code": "CP061",
+            "t": 2.508646260797812,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.02953958729479222,
+            "beta": 0.07410437521259106,
+            "weight": 42.54,
+            "inflation_yoy": 3.726152623211454,
+            "n": 240
+        },
+        {
+            "label": "Outpatient care services",
+            "contrib_core_12m": 0.3260581071910225,
+            "code": "CP062",
+            "t": 4.13307099520406,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.020634354615167477,
+            "beta": 0.08528325256470372,
+            "weight": 25.19,
+            "inflation_yoy": 8.068362480127188,
+            "n": 240
+        },
+        {
+            "label": "Inpatient care services",
+            "contrib_core_12m": 0.028062334873889927,
+            "code": "CP063",
+            "t": 1.9838222350476398,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.10196820102569314,
+            "beta": 0.20228678446257758,
+            "weight": 3.15,
+            "inflation_yoy": 5.444126074498579,
+            "n": 240
+        },
+        {
+            "label": "Other health services",
+            "contrib_core_12m": 0.022372698678390878,
+            "code": "CP064",
+            "t": 3.6471151667566244,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.03323336434446083,
+            "beta": 0.12120590714303191,
+            "weight": 3.62,
+            "inflation_yoy": 3.8120832089180823,
+            "n": 240
+        },
+        {
+            "label": "Purchase of vehicles",
+            "contrib_core_12m": -0.14781119715887409,
+            "code": "CP071",
+            "t": 2.167887008808445,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.03221719254185643,
+            "beta": 0.06984323317177088,
+            "weight": 25.99,
+            "inflation_yoy": -3.4065487085621404,
+            "n": 240
+        },
+        {
+            "label": "Parts and accessories for vehicles",
+            "contrib_core_12m": -0.08812837402111079,
+            "code": "CP0721",
+            "t": 2.513562594703689,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.02893595164960292,
+            "beta": 0.0727323257085964,
+            "weight": 18.52,
+            "inflation_yoy": -2.958520739630177,
+            "n": 240
+        },
+        {
+            "label": "Maintenance and repair of vehicles",
+            "contrib_core_12m": 0.5151827148589466,
+            "code": "CP0723",
+            "t": 2.2353311795103634,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.06528616876926513,
+            "beta": 0.14593620864071408,
+            "weight": 23.63,
+            "inflation_yoy": 13.44913151364764,
+            "n": 240
+        },
+        {
+            "label": "Other services for personal transport",
+            "contrib_core_12m": 0.020342876385700856,
+            "code": "CP0724",
+            "t": 0.4696395274019377,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.1094557798441042,
+            "beta": 0.05140476071739564,
+            "weight": 2.08,
+            "inflation_yoy": 6.005477308294216,
+            "n": 240
+        },
+        {
+            "label": "Passenger transport services",
+            "contrib_core_12m": 0.09839731814467767,
+            "code": "CP073",
+            "t": 2.4489539849934427,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.05668655287745722,
+            "beta": 0.13882275956479037,
+            "weight": 14.69,
+            "inflation_yoy": 4.558881449389518,
+            "n": 240
+        },
+        {
+            "label": "Transport services for goods",
+            "contrib_core_12m": 0.032737291968851945,
+            "code": "CP074",
+            "t": 1.4011007926724652,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.1399812703042388,
+            "beta": 0.19612786878256758,
+            "weight": 1.55,
+            "inflation_yoy": 12.988174500645933,
+            "n": 240
+        },
+        {
+            "label": "Information and communication equipment",
+            "contrib_core_12m": -0.05450749544352806,
+            "code": "CP081",
+            "t": -0.5167929565454953,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.02545704857665445,
+            "beta": -0.013156023398851547,
+            "weight": 16.99,
+            "inflation_yoy": -1.9169008430349188,
+            "n": 240
+        },
+        {
+            "label": "Software",
+            "contrib_core_12m": 0.003361277774880766,
+            "code": "CP082",
+            "t": null,
+            "robustness": {
+                "window to 2024": "none",
+                "y/y on 18-month gap": "none",
+                "window 2005-2019": "none",
+                "HP lambda 14400": "none",
+                "t > 1.645": "none"
+            },
+            "class": "none",
+            "se": null,
+            "beta": null,
+            "weight": 0.63,
+            "inflation_yoy": 3.3377161929806887,
+            "n": 36
+        },
+        {
+            "label": "Information and communication services",
+            "contrib_core_12m": 0.04674674859336708,
+            "code": "CP083",
+            "t": 0.1731395360577188,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.03905006481858436,
+            "beta": 0.0067611101057135446,
+            "weight": 27.93,
+            "inflation_yoy": 1.0133121398768319,
+            "n": 240
+        },
+        {
+            "label": "Recreational durables",
+            "contrib_core_12m": -0.001964830897545999,
+            "code": "CP091",
+            "t": 0.19039567460631596,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.035686836099278696,
+            "beta": 0.006794619233687196,
+            "weight": 0.58,
+            "inflation_yoy": -1.8626661296818336,
+            "n": 240
+        },
+        {
+            "label": "Other recreational goods",
+            "contrib_core_12m": -0.04890403113639645,
+            "code": "CP092",
+            "t": 2.1560660092347463,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.020975133927540638,
+            "beta": 0.04522377330031688,
+            "weight": 6.68,
+            "inflation_yoy": -2.9945553539020064,
+            "n": 240
+        },
+        {
+            "label": "Garden products and pets",
+            "contrib_core_12m": 0.0970825068243572,
+            "code": "CP093",
+            "t": 3.161172089137954,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.042986766324416115,
+            "beta": 0.13588856590703954,
+            "weight": 16.41,
+            "inflation_yoy": 3.5749458341540308,
+            "n": 240
+        },
+        {
+            "label": "Recreational services",
+            "contrib_core_12m": 0.19244372973684473,
+            "code": "CP094",
+            "t": 4.177499537909241,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.029207770934695405,
+            "beta": 0.12201544958304901,
+            "weight": 16.12,
+            "inflation_yoy": 8.180744240992333,
+            "n": 240
+        },
+        {
+            "label": "Cultural goods",
+            "contrib_core_12m": 0.0015716625113738223,
+            "code": "CP095",
+            "t": 1.566499985172273,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.012683011066377719,
+            "beta": 0.01986793664742047,
+            "weight": 0.4,
+            "inflation_yoy": 2.9317269076305275,
+            "n": 240
+        },
+        {
+            "label": "Cultural services",
+            "contrib_core_12m": 0.05482805816863373,
+            "code": "CP096",
+            "t": 2.972116456222826,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.030437701392858205,
+            "beta": 0.09046439319931031,
+            "weight": 8.89,
+            "inflation_yoy": 3.8576815237358453,
+            "n": 240
+        },
+        {
+            "label": "Newspapers, books and stationery",
+            "contrib_core_12m": 0.04992761046019968,
+            "code": "CP097",
+            "t": 3.3860407002401627,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.013824928592147687,
+            "beta": 0.046811770890926,
+            "weight": 5.9,
+            "inflation_yoy": 4.4800324346239595,
+            "n": 240
+        },
+        {
+            "label": "Package holidays",
+            "contrib_core_12m": 0.25356268392553816,
+            "code": "CP098",
+            "t": 1.3399287500969983,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.04120030709834743,
+            "beta": 0.05520547599390117,
+            "weight": 14.9,
+            "inflation_yoy": 9.445796667290773,
+            "n": 240
+        },
+        {
+            "label": "Early childhood and primary education",
+            "contrib_core_12m": 0.01784635574433779,
+            "code": "CP101",
+            "t": -0.4146480206355859,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.1019800315939661,
+            "beta": -0.04228581824479256,
+            "weight": 1.9,
+            "inflation_yoy": 5.746445497630326,
+            "n": 240
+        },
+        {
+            "label": "Secondary education",
+            "contrib_core_12m": 0.006601108281873113,
+            "code": "CP102",
+            "t": null,
+            "robustness": {
+                "window to 2024": "none",
+                "y/y on 18-month gap": "none",
+                "window 2005-2019": "none",
+                "HP lambda 14400": "none",
+                "t > 1.645": "none"
+            },
+            "class": "none",
+            "se": null,
+            "beta": null,
+            "weight": 0.84,
+            "inflation_yoy": null,
+            "n": 0
+        },
+        {
+            "label": "Tertiary education",
+            "contrib_core_12m": 0.01431439391593301,
+            "code": "CP104",
+            "t": 0.12481961858687694,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.04788110684509331,
+            "beta": 0.0059765014939220495,
+            "weight": 4.91,
+            "inflation_yoy": 1.8324350808427203,
+            "n": 240
+        },
+        {
+            "label": "Education not defined by level",
+            "contrib_core_12m": 0.046926116122170514,
+            "code": "CP105",
+            "t": 2.651996429181239,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.01766828313377927,
+            "beta": 0.046856223780545735,
+            "weight": 5.48,
+            "inflation_yoy": 5.235756385068768,
+            "n": 240
+        },
+        {
+            "label": "Restaurants and cafés",
+            "contrib_core_12m": 0.5495262969219887,
+            "code": "CP111",
+            "t": 2.605597736583965,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.02941326068329426,
+            "beta": 0.07663912546194565,
+            "weight": 56.25,
+            "inflation_yoy": 6.069592724396999,
+            "n": 240
+        },
+        {
+            "label": "Accommodation services",
+            "contrib_core_12m": 0.14788831591515456,
+            "code": "CP112",
+            "t": 0.16049774090568886,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.18767726231481716,
+            "beta": 0.030121776620892528,
+            "weight": 12.63,
+            "inflation_yoy": 6.600994292027251,
+            "n": 240
+        },
+        {
+            "label": "Insurance",
+            "contrib_core_12m": 0.04097678718736192,
+            "code": "CP121",
+            "t": 1.006586592922515,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.05246802246231583,
+            "beta": 0.052813607967724475,
+            "weight": 3.82,
+            "inflation_yoy": 6.595259347416449,
+            "n": 240
+        },
+        {
+            "label": "Financial services",
+            "contrib_core_12m": 0.11851231134454651,
+            "code": "CP122",
+            "t": 1.098977384517499,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.0956996298446235,
+            "beta": 0.10517172890593712,
+            "weight": 8.98,
+            "inflation_yoy": 7.330581008961845,
+            "n": 240
+        },
+        {
+            "label": "Personal care",
+            "contrib_core_12m": 0.2685359519227305,
+            "code": "CP131",
+            "t": 4.155210458180021,
+            "robustness": {
+                "window to 2024": "cyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "cyclical",
+                "HP lambda 14400": "cyclical",
+                "t > 1.645": "cyclical"
+            },
+            "class": "cyclical",
+            "se": 0.013807873818328079,
+            "beta": 0.05737462169514694,
+            "weight": 35.51,
+            "inflation_yoy": 4.761430421356705,
+            "n": 240
+        },
+        {
+            "label": "Other personal effects",
+            "contrib_core_12m": 0.09930052858110666,
+            "code": "CP132",
+            "t": 1.5690904010525994,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "cyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.03587827725982668,
+            "beta": 0.05629626045469781,
+            "weight": 16.3,
+            "inflation_yoy": 3.748884260636709,
+            "n": 240
+        },
+        {
+            "label": "Social protection",
+            "contrib_core_12m": 0.10731140906686357,
+            "code": "CP133",
+            "t": 0.6908593747779206,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.11159895837326433,
+            "beta": 0.07709918660762058,
+            "weight": 5.5,
+            "inflation_yoy": 11.900479616306958,
+            "n": 204
+        },
+        {
+            "label": "Other services",
+            "contrib_core_12m": 0.1273826739424529,
+            "code": "CP139",
+            "t": 0.4717926891186223,
+            "robustness": {
+                "window to 2024": "acyclical",
+                "y/y on 18-month gap": "acyclical",
+                "window 2005-2019": "acyclical",
+                "HP lambda 14400": "acyclical",
+                "t > 1.645": "acyclical"
+            },
+            "class": "acyclical",
+            "se": 0.07156509663223676,
+            "beta": 0.03376388938715704,
+            "weight": 9.69,
+            "inflation_yoy": 8.36744882675986,
+            "n": 240
+        }
+    ],
+    "latest": "2026-09-01",
+    "cyclical_weight": 372.95,
+    "core_latest_yoy": {
+        "cyclical": 2.57,
+        "acyclical": 1.27,
+        "unclassified": 0.02
+    },
+    "first": "1997-01-01",
+    "corr_in": 0.59,
+    "specs": [
+        "t > 1.645",
+        "window 2005-2019",
+        "window to 2024",
+        "HP lambda 14400",
+        "y/y on 18-month gap"
+    ],
+    "classified_weight": 605.6300000000001,
+    "gap_latest": {
+        "date": "2026-09-01",
+        "value": 0.46
+    }
+}
