@@ -1,0 +1,319 @@
+{
+    "events": [
+        {
+            "flash": true,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Q3 2026",
+            "section": "growth",
+            "title": "GDP and employment flash, euro area",
+            "date": "2026-11-13",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Sep 2026",
+            "section": "growth",
+            "title": "Industrial production, EU countries",
+            "date": "2026-11-16",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Oct 2026",
+            "section": "inflation",
+            "title": "HICP by component, EU countries",
+            "date": "2026-11-18",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": true,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "HICP flash, Lithuania",
+            "date": "2026-11-26",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Q3 2026",
+            "section": "labour",
+            "title": "Average wages, Lithuania",
+            "date": "2026-11-26",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Oct 2026",
+            "section": "growth",
+            "title": "Retail trade, Lithuania",
+            "date": "2026-11-27",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Oct 2026",
+            "section": "growth",
+            "title": "Industrial production, Lithuania",
+            "date": "2026-11-27",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "growth",
+            "title": "Economic sentiment and confidence",
+            "date": "2026-11-27",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Q3 2026",
+            "section": "growth",
+            "title": "GDP second estimate with components, Lithuania",
+            "date": "2026-12-01",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": true,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "HICP flash, euro area countries",
+            "date": "2026-12-01",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Oct 2026",
+            "section": "labour",
+            "title": "Unemployment, EU countries",
+            "date": "2026-12-02",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Oct 2026",
+            "section": "growth",
+            "title": "Retail trade volume, EU countries",
+            "date": "2026-12-04",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Q3 2026",
+            "section": "growth",
+            "title": "GDP and components, EU countries",
+            "date": "2026-12-07",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Sep 2026",
+            "section": "inflation",
+            "title": "Services turnover, EU countries",
+            "date": "2026-12-07",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "Consumer prices (CPI), Lithuania",
+            "date": "2026-12-08",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "HICP, Lithuania",
+            "date": "2026-12-09",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Oct 2026",
+            "section": "growth",
+            "title": "Industrial production, EU countries",
+            "date": "2026-12-15",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Q3 2026",
+            "section": "labour",
+            "title": "Job vacancies, EU countries",
+            "date": "2026-12-16",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "HICP by component, EU countries",
+            "date": "2026-12-17",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Q3 2026",
+            "section": "labour",
+            "title": "Labour cost index, EU countries",
+            "date": "2026-12-17",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": true,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Dec 2026",
+            "section": "inflation",
+            "title": "HICP flash, Lithuania",
+            "date": "2026-12-29",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Nov 2026",
+            "section": "growth",
+            "title": "Retail trade, Lithuania",
+            "date": "2026-12-29",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": false,
+            "time": "09:00",
+            "source": "Statistics Lithuania",
+            "period": "Nov 2026",
+            "section": "growth",
+            "title": "Industrial production, Lithuania",
+            "date": "2026-12-29",
+            "url": "https://osp.stat.gov.lt/en/informacijos-skelbimo-kalendoriai"
+        },
+        {
+            "flash": true,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Dec 2026",
+            "section": "inflation",
+            "title": "HICP flash, euro area countries",
+            "date": "2027-01-06",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "labour",
+            "title": "Unemployment, EU countries",
+            "date": "2027-01-07",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Dec 2026",
+            "section": "growth",
+            "title": "Economic sentiment and confidence",
+            "date": "2027-01-08",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "growth",
+            "title": "Retail trade volume, EU countries",
+            "date": "2027-01-08",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Oct 2026",
+            "section": "inflation",
+            "title": "Services turnover, EU countries",
+            "date": "2027-01-11",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "growth",
+            "title": "Industrial production, EU countries",
+            "date": "2027-01-14",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Dec 2026",
+            "section": "inflation",
+            "title": "HICP by component, EU countries",
+            "date": "2027-01-19",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Q3 2026",
+            "section": "growth",
+            "title": "GDP and components, EU countries",
+            "date": "2027-01-19",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        }
+    ],
+    "errors": [
+    ],
+    "built": "2026-11-12",
+    "to": "2027-01-21",
+    "from": "2026-11-12"
+}

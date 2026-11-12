@@ -85,7 +85,7 @@ function renderChrome() {
     `Data updated ${generated.toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" })}`;
 
   const nav = document.getElementById("nav-links");
-  const links = [["overview", "Overview"], ...SECTIONS.map((s) => [s.id, s.title]), ["data", "Data status"]];
+  const links = [["overview", "Overview"], ...SECTIONS.map((s) => [s.id, s.title]), ["calendar", "Calendar"]];
   nav.replaceChildren(...links.map(([id, t]) => el("li", {}, el("a", { href: `#${id}` }, t))));
 
   const rc = document.getElementById("range");
@@ -144,10 +144,56 @@ async function renderOverview(root) {
   sec.append(el("div", { class: "two-col" },
     el("div", { class: "card" }, el("h3", {}, "Recently updated"),
       el("p", { class: "subtitle" }, "Lithuanian series, by the source's last update"), rel),
-    el("div", { class: "card", id: "status-card" }, el("h3", {}, "Data status"),
-      el("p", { class: "subtitle" }, `${state.catalogue.series.length} series · built ${state.catalogue.today}`),
-      statusList())));
+    calendarCard()));
   root.append(sec);
+}
+
+// ── release calendar ("Coming up") + data status ─────────────────────────────
+const SECTION_NAME = Object.fromEntries(SECTIONS.map((s) => [s.id, s.title]));
+const SRC_SHORT = { "Statistics Lithuania": "Statistics Lithuania", Eurostat: "Eurostat" };
+
+function calendarCard() {
+  const nW = state.catalogue.warnings.length, nE = state.catalogue.errors.length;
+  const list = el("div", { class: "cal" }, el("p", { class: "loading" }, "Loading…"));
+  const status = el("details", { class: "status-details" },
+    el("summary", {}, `Data status: ${state.catalogue.series.length} series · built ${state.catalogue.today}`,
+      nE ? ` · ${nE} failed` : "", nW ? ` · ${nW} note${nW > 1 ? "s" : ""}` : " · all current"),
+    statusList());
+  const card = el("div", { class: "card", id: "calendar" }, el("h3", {}, "Coming up"),
+    el("p", { class: "subtitle" }, "Scheduled data releases, Vilnius time. From the official calendars of Statistics Lithuania and Eurostat"),
+    list, status);
+  fetch("data/calendar.json").then((r) => r.json()).then((d) => {
+    const today = new Date().toISOString().slice(0, 10);
+    const ev = d.events.filter((e) => e.date >= today);
+    if (!ev.length) {
+      list.replaceChildren(el("p", {}, d.errors.length ? "The release calendars could not be read at the last update." : "No releases scheduled in the coming weeks."));
+      return;
+    }
+    let shown = 10;
+    const draw = () => {
+      const byDay = d3.group(ev.slice(0, shown), (e) => e.date);
+      const day = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+      const rel = (iso) => {
+        const n = Math.round((new Date(iso + "T00:00:00Z") - new Date(today + "T00:00:00Z")) / 864e5);
+        return n === 0 ? "today" : n === 1 ? "tomorrow" : `in ${n} days`;
+      };
+      list.replaceChildren(...[...[...byDay].map(([date, es]) => el("div", { class: "cal-day" },
+          el("div", { class: "cal-date" }, el("strong", {}, day(date)), el("span", {}, rel(date))),
+          el("ul", {}, es.map((e) => el("li", {},
+            el("span", { class: "cal-time" }, e.time),
+            el("span", { class: "cal-title" },
+              e.section ? el("a", { href: `#${e.section}`, title: `Go to ${SECTION_NAME[e.section] ?? e.section}` }, e.title) : e.title,
+              e.flash ? el("span", { class: "flash-tag" }, "Flash") : null),
+            el("span", { class: "cal-period" }, e.period),
+            el("span", { class: "cal-src" }, SRC_SHORT[e.source] ?? e.source)))))),
+        ev.length > shown ? el("button", { type: "button", class: "link-btn", onclick: () => { shown = ev.length; draw(); } },
+          `Show all ${ev.length} releases until ${new Date(ev.at(-1).date + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" })}`) : null,
+        d.errors.length ? el("p", { class: "cal-note" }, `Not available at the last update: ${d.errors.map((x) => x.split(":")[0]).join(", ")}.`) : null]
+        .flat().filter(Boolean));
+    };
+    draw();
+  }).catch(() => list.replaceChildren(el("p", {}, "Release calendar not available.")));
+  return card;
 }
 
 function statusList() {
