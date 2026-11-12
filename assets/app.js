@@ -133,7 +133,7 @@ async function renderOverview(root) {
   const recent = [...state.catalogue.series]
     .filter((s) => s.geo === "LT" && s.group !== "gdp_contrib")
     .sort((a, b) => (b.dataset_updated ?? "").localeCompare(a.dataset_updated ?? "") || b.last_date.localeCompare(a.last_date))
-    .slice(0, 10);
+    .slice(0, 13);
   const rel = el("ul", { class: "releases" }, recent.map((s) => {
     const vm = viewMeta(s.id, s.default_view), L = s.latest[s.default_view];
     return el("li", {},
@@ -169,7 +169,7 @@ function calendarCard() {
       list.replaceChildren(el("p", {}, d.errors.length ? "The release calendars could not be read at the last update." : "No releases scheduled in the coming weeks."));
       return;
     }
-    let shown = 10;
+    let shown = 7;
     const draw = () => {
       const byDay = d3.group(ev.slice(0, shown), (e) => e.date);
       const day = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });

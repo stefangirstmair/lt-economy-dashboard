@@ -186,7 +186,7 @@ table.data th:first-child, table.data td:first-child { text-align: left; }
 table.data thead th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-2); font-weight: 500; }
 
 /* ── Latest releases + status ──────────────────────────────────────────── */
-.two-col { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; margin-top: 16px; }
+.two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
 @media (max-width: 900px) { .two-col { grid-template-columns: minmax(0, 1fr); } }
 ul.releases { list-style: none; margin: 0; padding: 0; }
 ul.releases li { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--grid); font-size: 14px; }
