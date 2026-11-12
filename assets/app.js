@@ -591,7 +591,7 @@ function sdInfoContent(d) {
         el("td", { class: "ind" }, x.groups.map((g) => `${g} (${w(groupsW.get(g)?.weight)})`).join(", "))))))),
 
     el("h3", {}, "Energy"),
-    el("p", {}, "Energy is where the approaches differ most. Shapiro has real quantities for gasoline, electricity and natural gas in the US consumption statistics; the ECB sidesteps energy by decomposing only core inflation; Eesti Pank (Meriküll 2025) pairs all housing and energy items with the output of the energy sector (NACE D). Here:"),
+    el("p", {}, "Energy is where the approaches differ most. Shapiro has real quantities for gasoline, electricity and natural gas in the US consumption statistics; the ECB sidesteps energy by decomposing only core inflation; Eesti Pank (Meriküll 2026) pairs all housing and energy items with the output of the energy sector (NACE D). Here:"),
     el("ul", {},
       el("li", {}, "Motor fuels: retail sales volume of automotive fuel."),
       el("li", {}, "Electricity: electricity consumed in Lithuania (available to the internal market, GWh). Not the energy sector's output: when imports from Russia stopped in 2022, Lithuanian generation rose while consumption fell, so output would misread 2022 as demand-driven."),
@@ -642,7 +642,7 @@ function sdInfoContent(d) {
     el("ul", {},
       ref("Shapiro (2022, revised 2024), Decomposing Supply and Demand Driven Inflation, FRBSF Working Paper 2022-18", "https://www.frbsf.org/wp-content/uploads/wp2022-18.pdf"),
       ref("Gonçalves and Koester (2022), The role of demand and supply in underlying inflation, ECB Economic Bulletin 7/2022", "https://www.ecb.europa.eu/pub/economic-bulletin/focus/2022/html/ecb.ebbox202207_07~8b71edbfcf.en.html"),
-      ref("Meriküll (2025), The impact of early pension withdrawals on household finances and inflation, Eesti Pank Working Paper 4/2025 (Appendix E)", "https://haldus.eestipank.ee/sites/default/files/2025-04/wp_2025_04.pdf"),
+      ref("Meriküll (2026), The impact of early pension withdrawals on household finances and inflation, Economic Modelling 157, 107475 (working-paper version: Eesti Pank WP 4/2025, Appendix E)", "https://haldus.eestipank.ee/sites/default/files/2025-04/wp_2025_04.pdf"),
       ref("Read (2024), Sign Restrictions and Supply-demand Decompositions of Inflation, RBA Research Discussion Paper 2024-05", "https://www.rba.gov.au/publications/rdp/2024/pdf/rdp2024-05.pdf")),
     el("p", { class: "dialog-foot" }, "Own estimates from Eurostat data. Mapping and settings: catalogue/models/supply_demand.toml."));
 }
