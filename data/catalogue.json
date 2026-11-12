@@ -115,7 +115,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -191,7 +191,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -267,7 +267,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -343,7 +343,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -389,7 +389,7 @@
             "unit": "EUR million, current prices",
             "title": "Nominal GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -425,7 +425,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Household consumption",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -461,7 +461,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Government consumption",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -497,7 +497,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Fixed investment",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -533,7 +533,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Inventories",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -569,7 +569,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Net exports",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -605,7 +605,7 @@
             "unit": "% q/q",
             "title": "GDP growth",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -661,7 +661,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Household consumption, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -717,7 +717,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Gross fixed capital formation, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -773,7 +773,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Exports of goods and services, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -829,7 +829,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Imports of goods and services, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -1941,7 +1941,7 @@
             "unit": "index, 2020 = 100",
             "title": "GDP deflator",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -1987,7 +1987,7 @@
             "unit": "index, 2020 = 100",
             "title": "GDP deflator",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-10",
+            "dataset_updated": "2026-11-11",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -3923,5 +3923,5 @@
             "source_ref": "ratio(wages.LT, hicp.LT)"
         }
     ],
-    "generated": "2026-11-12T11:39:46.439"
+    "generated": "2026-11-12T21:03:07.859"
 }
