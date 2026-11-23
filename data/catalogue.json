@@ -1,5 +1,5 @@
 {
-    "today": "2026-11-17",
+    "today": "2026-11-23",
     "geo_names": {
         "EA21": "Euro area",
         "LT": "Lithuania",
@@ -116,7 +116,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -192,7 +192,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -268,7 +268,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -344,7 +344,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Real GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -390,7 +390,7 @@
             "unit": "EUR million, current prices",
             "title": "Nominal GDP",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -426,7 +426,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Household consumption",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -462,7 +462,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Government consumption",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -498,7 +498,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Fixed investment",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -534,7 +534,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Inventories",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -570,7 +570,7 @@
             "unit": "pp of GDP growth, q/q",
             "title": "Net exports",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -606,7 +606,7 @@
             "unit": "% q/q",
             "title": "GDP growth",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -662,7 +662,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Household consumption, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -718,7 +718,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Gross fixed capital formation, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -774,7 +774,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Exports of goods and services, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -830,7 +830,7 @@
             "unit": "EUR million, chain-linked volumes (2020)",
             "title": "Imports of goods and services, real",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -896,7 +896,7 @@
             "unit": "index, 2021 = 100",
             "title": "Industrial production",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-19",
             "source_ref": "sts_inpr_m"
         },
         {
@@ -962,7 +962,7 @@
             "unit": "index, 2021 = 100",
             "title": "Industrial production",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-19",
             "source_ref": "sts_inpr_m"
         },
         {
@@ -1028,7 +1028,7 @@
             "unit": "index, 2021 = 100",
             "title": "Retail trade volume",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-14",
+            "dataset_updated": "2026-11-21",
             "source_ref": "sts_trtu_m"
         },
         {
@@ -1094,7 +1094,7 @@
             "unit": "index, 2021 = 100",
             "title": "Retail trade volume",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-14",
+            "dataset_updated": "2026-11-21",
             "source_ref": "sts_trtu_m"
         },
         {
@@ -1363,19 +1363,19 @@
             "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
             "latest": {
                 "pop": {
-                    "change": -0.7788274,
+                    "change": -0.797635,
                     "date": "2026-10-01",
-                    "value": 0.1034418
+                    "value": 0.08463419
                 },
                 "yoy": {
-                    "change": 0.003901,
+                    "change": -0.016031,
                     "date": "2026-10-01",
-                    "value": 6.089296
+                    "value": 6.069364
                 },
                 "level": {
-                    "change": 0.11,
+                    "change": 0.09,
                     "date": "2026-10-01",
-                    "value": 106.45
+                    "value": 106.43
                 }
             },
             "concept": "hicp",
@@ -1406,7 +1406,7 @@
             "unit": "index, 2025 = 100",
             "title": "HICP inflation",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1419,19 +1419,19 @@
             "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
             "latest": {
                 "pop": {
-                    "change": -0.1666294,
+                    "change": -0.1474576,
                     "date": "2026-10-01",
-                    "value": 0.4409509
+                    "value": 0.4601227
                 },
                 "yoy": {
-                    "change": 0.229982,
+                    "change": 0.249835,
                     "date": "2026-10-01",
-                    "value": 4.010324
+                    "value": 4.030177
                 },
                 "level": {
-                    "change": 0.46,
+                    "change": 0.48,
                     "date": "2026-10-01",
-                    "value": 104.78
+                    "value": 104.8
                 }
             },
             "concept": "hicp",
@@ -1462,7 +1462,7 @@
             "unit": "index, 2025 = 100",
             "title": "HICP inflation",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1475,19 +1475,19 @@
             "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
             "latest": {
                 "pop": {
-                    "change": 0.1058569,
+                    "change": 0.1348005,
                     "date": "2026-10-01",
-                    "value": 0.2701399
+                    "value": 0.2990835
                 },
                 "yoy": {
-                    "change": 0.022278,
+                    "change": 0.052019,
                     "date": "2026-10-01",
-                    "value": 3.033608
+                    "value": 3.063349
                 },
                 "level": {
-                    "change": 0.28,
+                    "change": 0.31,
                     "date": "2026-10-01",
-                    "value": 103.93
+                    "value": 103.96
                 }
             },
             "concept": "hicp",
@@ -1518,7 +1518,7 @@
             "unit": "index, 2025 = 100",
             "title": "HICP inflation",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1531,19 +1531,19 @@
             "notes": "Harmonised index of consumer prices, all items, not seasonally adjusted.",
             "latest": {
                 "pop": {
-                    "change": -0.0711302,
+                    "change": -0.0615287,
                     "date": "2026-10-01",
-                    "value": 0.5568891
+                    "value": 0.5664906
                 },
                 "yoy": {
-                    "change": 0.48194,
+                    "change": 0.491832,
                     "date": "2026-10-01",
-                    "value": 3.600752
+                    "value": 3.610644
                 },
                 "level": {
-                    "change": 0.58,
+                    "change": 0.59,
                     "date": "2026-10-01",
-                    "value": 104.73
+                    "value": 104.74
                 }
             },
             "concept": "hicp",
@@ -1574,7 +1574,7 @@
             "unit": "index, 2025 = 100",
             "title": "HICP inflation",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1587,14 +1587,14 @@
             "notes": "",
             "latest": {
                 "yoy": {
-                    "change": -0.160899,
+                    "change": -0.101422,
                     "date": "2026-10-01",
-                    "value": 3.697462
+                    "value": 3.756939
                 },
                 "level": {
-                    "change": -0.1,
+                    "change": -0.04,
                     "date": "2026-10-01",
-                    "value": 104.61
+                    "value": 104.67
                 }
             },
             "concept": "hicp_core",
@@ -1620,7 +1620,7 @@
             "unit": "index, 2025 = 100",
             "title": "Core inflation (excl. energy, food, alcohol, tobacco)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1633,14 +1633,14 @@
             "notes": "",
             "latest": {
                 "yoy": {
-                    "change": 0.04252,
+                    "change": 0.06231,
                     "date": "2026-10-01",
-                    "value": 2.552939
+                    "value": 2.572729
                 },
                 "level": {
-                    "change": 0.33,
+                    "change": 0.35,
                     "date": "2026-10-01",
-                    "value": 103.64
+                    "value": 103.66
                 }
             },
             "concept": "hicp_core",
@@ -1666,7 +1666,7 @@
             "unit": "index, 2025 = 100",
             "title": "Core inflation (excl. energy, food, alcohol, tobacco)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1712,7 +1712,7 @@
             "unit": "index, 2025 = 100",
             "title": "Services",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1725,14 +1725,14 @@
             "notes": "",
             "latest": {
                 "yoy": {
-                    "change": 0.054917,
+                    "change": 0.064819,
                     "date": "2026-10-01",
-                    "value": 3.297356
+                    "value": 3.307258
                 },
                 "level": {
-                    "change": 0.2,
+                    "change": 0.21,
                     "date": "2026-10-01",
-                    "value": 104.32
+                    "value": 104.33
                 }
             },
             "concept": "hicp_services",
@@ -1758,7 +1758,7 @@
             "unit": "index, 2025 = 100",
             "title": "Services",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1771,14 +1771,14 @@
             "notes": "",
             "latest": {
                 "yoy": {
-                    "change": -0.0347944,
+                    "change": 0.0546244,
                     "date": "2026-10-01",
-                    "value": 0.7749627
+                    "value": 0.8643815
                 },
                 "level": {
-                    "change": 0.59,
+                    "change": 0.68,
                     "date": "2026-10-01",
-                    "value": 101.43
+                    "value": 101.52
                 }
             },
             "concept": "hicp_goods",
@@ -1804,7 +1804,7 @@
             "unit": "index, 2025 = 100",
             "title": "Non-energy industrial goods",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1817,14 +1817,14 @@
             "notes": "",
             "latest": {
                 "yoy": {
-                    "change": 0.3981678,
+                    "change": 0.2390588,
                     "date": "2026-10-01",
-                    "value": 0.8949881
+                    "value": 0.7358791
                 },
                 "level": {
-                    "change": 0.32,
+                    "change": 0.16,
                     "date": "2026-10-01",
-                    "value": 101.46
+                    "value": 101.3
                 }
             },
             "concept": "hicp_food",
@@ -1850,7 +1850,7 @@
             "unit": "index, 2025 = 100",
             "title": "Food, alcohol and tobacco",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1896,7 +1896,7 @@
             "unit": "index, 2025 = 100",
             "title": "Energy",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-04",
+            "dataset_updated": "2026-11-18",
             "source_ref": "prc_hicp_minr"
         },
         {
@@ -1942,7 +1942,7 @@
             "unit": "index, 2020 = 100",
             "title": "GDP deflator",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -1988,7 +1988,7 @@
             "unit": "index, 2020 = 100",
             "title": "GDP deflator",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_gdp"
         },
         {
@@ -2034,7 +2034,7 @@
             "unit": "% of labour force",
             "title": "Unemployment rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2080,7 +2080,7 @@
             "unit": "% of labour force",
             "title": "Unemployment rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2126,7 +2126,7 @@
             "unit": "% of labour force",
             "title": "Unemployment rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2172,7 +2172,7 @@
             "unit": "% of labour force",
             "title": "Unemployment rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2218,7 +2218,7 @@
             "unit": "% of labour force under 25",
             "title": "Youth unemployment rate (under 25)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2264,7 +2264,7 @@
             "unit": "% of labour force under 25",
             "title": "Youth unemployment rate (under 25)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-05",
+            "dataset_updated": "2026-11-20",
             "source_ref": "une_rt_m"
         },
         {
@@ -2632,7 +2632,7 @@
             "unit": "thousand persons",
             "title": "Employment (national accounts)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_pe"
         },
         {
@@ -2688,7 +2688,7 @@
             "unit": "thousand persons",
             "title": "Employment (national accounts)",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-11-16",
+            "dataset_updated": "2026-11-20",
             "source_ref": "namq_10_pe"
         },
         {
@@ -2724,12 +2724,12 @@
             "unit": "% of posts",
             "title": "Job vacancy rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-19",
             "source_ref": "jvs_q_r21"
         },
         {
             "geo": "EA21",
-            "last_date": "2026-04-01",
+            "last_date": "2026-07-01",
             "first_date": "2006-01-01",
             "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?geo=EA21&s_adj=SA&nace_r2_1=B-T&lang=en&sizeclas=TOTAL&indic_em=JVR",
             "geo_name": "Euro area",
@@ -2737,8 +2737,8 @@
             "notes": "NACE Rev. 2.1, industry, construction and services (B-T). Successor of jvs_q_nace2 (frozen 2025-Q4).",
             "latest": {
                 "level": {
-                    "change": -0.1,
-                    "date": "2026-04-01",
+                    "change": 0,
+                    "date": "2026-07-01",
                     "value": 2.1
                 }
             },
@@ -2746,7 +2746,7 @@
             "stale": false,
             "group": "",
             "freq": "Q",
-            "last_period": "2026 Q2",
+            "last_period": "2026 Q3",
             "views": [
                 {
                     "label": "Level",
@@ -2760,7 +2760,7 @@
             "unit": "% of posts",
             "title": "Job vacancy rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-19",
             "source_ref": "jvs_q_r21"
         },
         {
@@ -2796,7 +2796,7 @@
             "unit": "% of posts",
             "title": "Job vacancy rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-19",
             "source_ref": "jvs_q_r21"
         },
         {
@@ -2832,7 +2832,7 @@
             "unit": "% of posts",
             "title": "Job vacancy rate",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-19",
             "source_ref": "jvs_q_r21"
         },
         {
@@ -2878,12 +2878,12 @@
             "unit": "vacancies",
             "title": "Job vacancies",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-19",
             "source_ref": "jvs_q_r21"
         },
         {
             "geo": "LT",
-            "last_date": "2026-09-01",
+            "last_date": "2026-10-01",
             "first_date": "2019-12-01",
             "source_url": "https://osp.stat.gov.lt/statistiniu-rodikliu-analize?indicator=S10R022",
             "geo_name": "Lithuania",
@@ -2891,26 +2891,26 @@
             "notes": "Statistics Lithuania experimental statistics, all activities (NACE Rev. 2.1), not seasonally adjusted. Monthly and more recent than the quarterly survey, but a different measure: its quarterly averages ran about 2-3% above the survey's unadjusted counts in 2026.",
             "latest": {
                 "ma:3": {
-                    "change": -1618.34,
-                    "date": "2026-09-01",
-                    "value": 31773.33
+                    "change": 581,
+                    "date": "2026-10-01",
+                    "value": 32354.33
                 },
                 "yoy": {
-                    "change": -12.20583,
-                    "date": "2026-09-01",
-                    "value": -5.832407
+                    "change": 5.357177,
+                    "date": "2026-10-01",
+                    "value": -0.47523
                 },
                 "level": {
-                    "change": -44,
-                    "date": "2026-09-01",
-                    "value": 30499
+                    "change": 5522,
+                    "date": "2026-10-01",
+                    "value": 36021
                 }
             },
             "concept": "vacancies_m",
             "stale": false,
             "group": "",
             "freq": "M",
-            "last_period": "Sep 2026",
+            "last_period": "Oct 2026",
             "views": [
                 {
                     "label": "3-month moving average",
@@ -2934,7 +2934,7 @@
             "unit": "vacancies",
             "title": "Job vacancies, monthly (experimental)",
             "source_name": "Statistics Lithuania",
-            "dataset_updated": "2026-10-20",
+            "dataset_updated": "2026-11-20",
             "source_ref": "S10R022_M3060216_2"
         },
         {
@@ -3072,12 +3072,12 @@
             "unit": "index, 2020 = 100",
             "title": "Labour cost index",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-16",
+            "dataset_updated": "2026-11-19",
             "source_ref": "lc_lci_r2_q"
         },
         {
             "geo": "EA21",
-            "last_date": "2026-04-01",
+            "last_date": "2026-07-01",
             "first_date": "2010-01-01",
             "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?geo=EA21&s_adj=SCA&lcstruct=D1_D4_MD5&unit=I20&lang=en&nace_r2=B-S",
             "geo_name": "Euro area",
@@ -3085,21 +3085,21 @@
             "notes": "Hourly labour costs, industry, construction and services (NACE Rev. 2 B-S).",
             "latest": {
                 "yoy": {
-                    "change": -0.032094,
-                    "date": "2026-04-01",
-                    "value": 3.171953
+                    "change": 0.227715,
+                    "date": "2026-07-01",
+                    "value": 3.399668
                 },
                 "level": {
-                    "change": 1.2,
-                    "date": "2026-04-01",
-                    "value": 123.6
+                    "change": 1.1,
+                    "date": "2026-07-01",
+                    "value": 124.7
                 }
             },
             "concept": "lci",
             "stale": false,
             "group": "",
             "freq": "Q",
-            "last_period": "2026 Q2",
+            "last_period": "2026 Q3",
             "views": [
                 {
                     "label": "% change, y/y",
@@ -3118,7 +3118,7 @@
             "unit": "index, 2020 = 100",
             "title": "Labour cost index",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-16",
+            "dataset_updated": "2026-11-19",
             "source_ref": "lc_lci_r2_q"
         },
         {
@@ -3154,7 +3154,7 @@
             "unit": "ratio",
             "title": "Vacancies per unemployed person",
             "source_name": "Eurostat",
-            "dataset_updated": "2026-09-15",
+            "dataset_updated": "2026-11-06",
             "source_ref": "ratio(vacancies.LT, unemployed_q.LT)"
         },
         {
@@ -3204,5 +3204,5 @@
             "source_ref": "ratio(wages.LT, hicp.LT)"
         }
     ],
-    "generated": "2026-11-17T11:44:43.388"
+    "generated": "2026-11-23T06:49:50.587"
 }

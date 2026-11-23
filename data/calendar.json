@@ -1,16 +1,6 @@
 {
     "events": [
         {
-            "flash": false,
-            "time": "13:00",
-            "source": "Eurostat",
-            "period": "Oct 2026",
-            "section": "inflation",
-            "title": "HICP by component, EU countries",
-            "date": "2026-11-18",
-            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
-        },
-        {
             "flash": true,
             "time": "09:00",
             "source": "Statistics Lithuania",
@@ -319,13 +309,44 @@
             "title": "Unemployment, EU countries",
             "date": "2027-02-01",
             "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": true,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Jan 2027",
+            "section": "inflation",
+            "title": "HICP flash, euro area countries",
+            "date": "2027-02-02",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Dec 2026",
+            "section": "growth",
+            "title": "Retail trade volume, EU countries",
+            "date": "2027-02-05",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
+        },
+        {
+            "flash": false,
+            "time": "13:00",
+            "source": "Eurostat",
+            "period": "Nov 2026",
+            "section": "inflation",
+            "title": "Services turnover, EU countries",
+            "date": "2027-02-08",
+            "url": "https://ec.europa.eu/eurostat/web/main/news/release-calendar"
         }
     ],
     "errors": [
     ],
-    "built": "2026-11-17",
+    "built": "2026-11-23",
     "notes": [
+        "Statistics Lithuania: site not reachable from the build server, stored calendar used (2026_OSP_kalendorius.xlsx)"
     ],
-    "to": "2027-01-26",
-    "from": "2026-11-17"
+    "to": "2027-02-01",
+    "from": "2026-11-23"
 }
