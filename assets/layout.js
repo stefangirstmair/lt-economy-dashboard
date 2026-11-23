@@ -6,6 +6,8 @@
 //             `headline` marks a series drawn in the text colour (e.g. all-items HICP).
 //   contrib : stacked bars of contributions + a total (GDP growth decomposition)
 //   scatter : connected scatter of two series over time (Beveridge curve)
+//
+// Sections: `title` is the short label in the navigation, `heading` the section's H2 on the page.
 
 export const TILES = [
   { id: "gdp_real.LT",   view: "yoy",   label: "Real GDP growth" },
@@ -20,6 +22,7 @@ export const SECTIONS = [
   {
     id: "growth",
     title: "Growth",
+    heading: "Economic growth in Lithuania",
     intro: "Output, its expenditure components, monthly activity and sentiment.",
     charts: [
       { type: "lines", title: "Real GDP", concept: "gdp_real", view: "yoy" },
@@ -54,6 +57,7 @@ export const SECTIONS = [
   {
     id: "labour",
     title: "Labour market",
+    heading: "Lithuania's labour market",
     intro: "Unemployment, employment, vacancies and wages.",
     charts: [
       { type: "lines", title: "Unemployment rate", concept: "unemp_rate" },
@@ -83,6 +87,7 @@ export const SECTIONS = [
   {
     id: "inflation",
     title: "Inflation",
+    heading: "Inflation in Lithuania",
     intro: "Consumer prices (HICP) and the GDP deflator.",
     charts: [
             { type: "lines", title: "HICP inflation", concept: "hicp", view: "yoy" },

@@ -85,7 +85,7 @@ function renderChrome() {
     `Data updated ${generated.toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" })}`;
 
   const nav = document.getElementById("nav-links");
-  const links = [["overview", "Overview"], ...SECTIONS.map((s) => [s.id, s.title]), ["calendar", "Calendar"]];
+  const links = [["overview", "Overview"], ...SECTIONS.map((s) => [s.id, s.title]), ["calendar", "Calendar"], ["about", "About"]];
   nav.replaceChildren(...links.map(([id, t]) => el("li", {}, el("a", { href: `#${id}` }, t))));
 
   const rc = document.getElementById("range");
@@ -222,7 +222,7 @@ async function drawSpark(node, t) {
 function renderSections(root) {
   for (const sec of SECTIONS) {
     const s = el("section", { class: "block", id: sec.id },
-      el("h2", {}, sec.title), el("p", { class: "intro" }, sec.intro));
+      el("h2", {}, sec.heading ?? sec.title), el("p", { class: "intro" }, sec.intro));
     const grid = el("div", { class: "grid" });
     for (const c of sec.charts) {
       if (c.type === "subhead") {

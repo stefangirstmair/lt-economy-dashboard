@@ -3,16 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lithuanian Economy Dashboard</title>
-  <meta name="description" content="Growth, labour market and inflation in Lithuania, with the Baltic states and the euro area: charts updated as new data are released." />
+  <title>Lithuanian Economy Dashboard: GDP, Inflation, Labour Market</title>
+  <meta name="description" content="Lithuania's GDP, HICP inflation, wages, unemployment and vacancies, compared with Latvia, Estonia and the euro area. Eurostat and Statistics Lithuania data, updated weekly." />
   <meta name="theme-color" content="#3b4a1e" />
   <meta name="author" content="Stefan Girstmair" />
   <link rel="canonical" href="https://stefangirstmair.github.io/lt-economy-dashboard/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!-- Sharing previews (Open Graph, X). og-image.png is a fixed picture with no data in it, so it never goes stale. -->
+  <meta property="og:site_name" content="Lithuanian Economy Dashboard" />
   <meta property="og:title" content="Lithuanian Economy Dashboard" />
-  <meta property="og:description" content="Growth, labour market and inflation in Lithuania, with the Baltic states and the euro area. A personal project by Stefan Girstmair, updated weekly." />
+  <meta property="og:description" content="Growth, labour market and inflation in Lithuania, compared with Latvia, Estonia and the euro area. A personal project by Stefan Girstmair, updated weekly." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
   <meta property="og:url" content="https://stefangirstmair.github.io/lt-economy-dashboard/" />
+  <meta property="og:image" content="https://stefangirstmair.github.io/lt-economy-dashboard/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Lithuanian Economy Dashboard: line charts of growth, labour market and inflation" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@GirstmairStefan" />
+  <!-- Structured data. No licence is declared until DECISIONS O4 is resolved. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Lithuanian Economy Dashboard",
+        "url": "https://stefangirstmair.github.io/lt-economy-dashboard/",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Dataset",
+        "name": "Lithuanian macroeconomic indicators: growth, labour market and inflation",
+        "description": "Monthly and quarterly indicators for Lithuania, compared with Latvia, Estonia and the euro area: real GDP and its expenditure components, industrial production, retail trade, economic sentiment, unemployment, employment, job vacancies, wages and HICP inflation, including core inflation and its main components. Compiled from Eurostat and Statistics Lithuania and updated every week. A personal project, not an official publication of Lietuvos bankas.",
+        "url": "https://stefangirstmair.github.io/lt-economy-dashboard/",
+        "creator": { "@type": "Person", "name": "Stefan Girstmair", "url": "https://stefangirstmair.github.io/" },
+        "isBasedOn": ["https://ec.europa.eu/eurostat", "https://osp.stat.gov.lt/"],
+        "spatialCoverage": ["Lithuania", "Latvia", "Estonia", "Euro area"],
+        "keywords": ["Lithuania", "GDP", "HICP inflation", "core inflation", "unemployment", "wages", "job vacancies", "Baltic states", "euro area"]
+      }
+    ]
+  }
+  </script>
   <!-- Google Analytics (same property as the distribution plotter) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0HC79KE8B"></script>
   <script>
@@ -25,8 +58,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/site.css" />
-  <script src="vendor/d3-7.9.0.min.js"></script>
-  <script src="vendor/plot-0.6.16.umd.min.js"></script>
+  <!-- defer: no render blocking; deferred and module scripts still run in document order (d3, Plot, app.js) -->
+  <script defer src="vendor/d3-7.9.0.min.js"></script>
+  <script defer src="vendor/plot-0.6.16.umd.min.js"></script>
   <script type="module" src="assets/app.js"></script>
 </head>
 <body>
@@ -34,6 +68,8 @@
     <div class="inner">
       <div>
         <h1>Lithuanian Economy Dashboard</h1>
+        <p class="lede">Growth, labour market and inflation in Lithuania, compared with Latvia, Estonia and the euro area.
+          A personal project, not an official publication of Lietuvos bankas.</p>
         <p id="updated">Loading…</p>
       </div>
       <button id="theme-toggle" class="theme-toggle" type="button">Dark mode</button>
@@ -42,14 +78,45 @@
 
   <nav class="site-nav" aria-label="Sections">
     <div class="inner">
-      <ul id="nav-links"></ul>
+      <!-- Static links for crawlers and no-JavaScript readers; app.js rebuilds the list -->
+      <ul id="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#growth">Growth</a></li>
+        <li><a href="#labour">Labour market</a></li>
+        <li><a href="#inflation">Inflation</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
       <div id="range" class="range-control"></div>
     </div>
   </nav>
 
   <main id="content">
+    <noscript><p>The charts need JavaScript. What the dashboard covers is described below.</p></noscript>
     <p class="loading">Loading data…</p>
   </main>
+
+  <!-- Static text: outside #content, which app.js replaces when the data have loaded -->
+  <div class="about-wrap">
+    <section class="block" id="about">
+      <h2>About this dashboard</h2>
+      <p>This dashboard tracks the Lithuanian economy through the indicators that economists, analysts and journalists
+        follow most closely: real GDP and the expenditure components behind its growth, industrial production, retail
+        trade and sentiment, unemployment, employment, job vacancies and wages, and consumer price inflation (HICP),
+        including core inflation and its main components. Where the data allow it, Lithuania is shown next to Latvia,
+        Estonia and the euro area, so that each reading can be judged against its neighbours rather than in
+        isolation.</p>
+      <p>The data come from <a href="https://ec.europa.eu/eurostat">Eurostat</a> and
+        <a href="https://osp.stat.gov.lt/">Statistics Lithuania</a> and are downloaded again every Monday; growth rates
+        are computed from the published levels and checked against Eurostat's own. Every chart can be switched to a
+        table or downloaded as CSV, and the release calendar lists the next scheduled publications. The dashboard
+        contains no forecasts.</p>
+      <p class="disclaimer">This is a personal project by Stefan Girstmair. It is not an official publication of
+        Lietuvos bankas or any other institution, and it is not endorsed by them. For official statistics, see
+        Statistics Lithuania and Eurostat; for the forecasts and analysis of Lietuvos bankas, see its
+        <a href="https://www.lb.lt/en/">website</a>.</p>
+    </section>
+  </div>
 
   <footer class="site-footer">
     <div class="inner">

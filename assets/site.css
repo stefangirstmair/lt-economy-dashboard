@@ -72,6 +72,7 @@ a:hover { color: var(--brand-dark); }
 }
 .site-header h1 { font: 700 26px/1.2 var(--font-head); margin: 0; letter-spacing: .2px; }
 .site-header p { margin: 4px 0 0; opacity: .85; font-size: 14px; }
+.site-header p.lede { max-width: 760px; opacity: .95; font-size: 15px; }
 .theme-toggle {
   background: transparent; color: var(--header-text); border: 1px solid rgba(255,255,255,.45);
   border-radius: var(--radius); padding: 5px 12px; font: 500 13px var(--font-body); cursor: pointer;
@@ -107,6 +108,11 @@ a:hover { color: var(--brand-dark); }
 
 /* ── Layout ────────────────────────────────────────────────────────────── */
 main { max-width: 1240px; margin: 0 auto; padding: 8px 16px 48px; }
+/* Static "About" text below the dashboard (in the HTML itself, so search engines read it without JavaScript) */
+.about-wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px 40px; }
+.about-wrap section.block > p { margin: 0 0 12px; max-width: 860px; font-size: 16px; color: var(--text-2); }
+.about-wrap section.block > h2 { border-top: 5px solid var(--brand); padding-top: 14px; margin-bottom: 12px; }
+.about-wrap p.disclaimer { padding: 10px 14px; border-left: 4px solid var(--brand); background: var(--surface-2); color: var(--text); }
 /* Sections: a clear band so the reader sees where Growth / Labour market / Inflation start while scrolling */
 section.block { padding-top: 40px; scroll-margin-top: 56px; }
 section.block + section.block { margin-top: 24px; }
